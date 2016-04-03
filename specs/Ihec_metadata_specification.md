@@ -1,4 +1,4 @@
-#### Only terms from following ontologies are acceptable for annotating the metadata:
+## Only terms from following ontologies are acceptable for annotating the metadata:
 
 ##### Sample Ontologies
 
@@ -16,7 +16,7 @@
 
 * Assays and Platforms - Ontology for Biomedical Investigations (OBI)
 
-## Level 0 Metadata attributes
+## Level 0 Data
 
 ### SAMPLES
 
@@ -34,23 +34,23 @@ __BIOMATERIAL_PROVIDER__ - The name of the company, laboratory or person that pr
 
 __BIOMATERIAL_TYPE:__ Cell Line
 
-__LINE__ – The name of the cell line.
+__LINE__ - The name of the cell line.
 
-__LINEAGE__ – The developmental lineage to which the cell line belongs.
+__LINEAGE__ - The developmental lineage to which the cell line belongs.
 
 __DIFFERENTIATION_STAGE__ - The stage in cell differentiation to which the cell line belongs.
 
-__DIFFERENTIATION_METHOD__ – The protocol used to differentiation the cell line.
+__DIFFERENTIATION_METHOD__ - The protocol used to differentiation the cell line.
 
-__PASSAGE__ – The number of times the cell line has been re-plated and allowed to grow back to confluency or to some maximum density if using suspension cultures.
+__PASSAGE__ - The number of times the cell line has been re-plated and allowed to grow back to confluency or to some maximum density if using suspension cultures.
 
-__MEDIUM__ – The medium in which the cell line has been grown.
+__MEDIUM__ - The medium in which the cell line has been grown.
 
 __SEX:__ "Male", "Female", "Unknown", or “Mixed” for pooled samples.
 
-__BATCH__ – The batch from which the cell line is derived. Primarily applicable to initial H1 cell line batches. NA if not applicable.
+__BATCH__ - The batch from which the cell line is derived. Primarily applicable to initial H1 cell line batches. NA if not applicable.
 
-Primary Cell
+#### Primary Cell
 
 __MOLECULE__ - (Controlled Vocabulary) The type of molecule that was extracted from the biological material. Include one of the following: total RNA, polyA RNA, cytoplasmic RNA, nuclear RNA, genomic DNA, protein, or other.
 
@@ -64,9 +64,9 @@ __BIOMATERIAL_PROVIDER__ - The name of the company, laboratory or person that pr
 
 __BIOMATERIAL_TYPE:__ Primary Cell
 
-__CELL_TYPE__ – The type of cell.
+__CELL_TYPE__ - The type of cell.
 
-__MARKERS__ – Markers used to isolate and identify the cell type.
+__MARKERS__ - Markers used to isolate and identify the cell type.
 
 __DONOR_ID__ - An identifying designation for the donor that provided the primary cell.
 
@@ -82,9 +82,9 @@ __DONOR_SEX__ - (Controlled Vocabulary) "Male", "Female", "Unknown", or “Mixed
 
 __DONOR_ETHNICITY__ - The ethnicity of the donor that provided the primary cell. NA if not available. If dealing with small/vulnerable populations consider identifiability issues.
 
-__PASSAGE_IF_EXPANDED__ – If the primary cell has been expanded, the number of times the primary cell has been re-plated and allowed to grow back to confluency or to some maximum density if using suspension cultures. NA if no expansion.
+__PASSAGE_IF_EXPANDED__ - If the primary cell has been expanded, the number of times the primary cell has been re-plated and allowed to grow back to confluency or to some maximum density if using suspension cultures. NA if no expansion.
 
-Primary Cell Culture
+#### Primary Cell Culture
 
 __MOLECULE__ - (Controlled Vocabulary) The type of molecule that was extracted from the biological material. Include one of the following: total RNA, polyA RNA, cytoplasmic RNA, nuclear RNA, genomic DNA, protein, or other.
 
@@ -98,11 +98,11 @@ __BIOMATERIAL_PROVIDER__ - The name of the company, laboratory or person that pr
 
 __BIOMATERIAL_TYPE__ - Primary Cell Culture
 
-__CELL_TYPE__ – The type of cell.
+__CELL_TYPE__ - The type of cell.
 
-__MARKERS__ – Markers used to isolate and identify the cell type.
+__MARKERS__ - Markers used to isolate and identify the cell type.
 
-__CULTURE_CONDITIONS__ – The conditions under which the primary cell was cultured.
+__CULTURE_CONDITIONS__ - The conditions under which the primary cell was cultured.
 
 __DONOR_ID__ - An identifying designation for the donor that provided the primary cell.
 
@@ -118,9 +118,9 @@ __DONOR_SEX__ - (Controlled Vocabulary) "Male", "Female", "Unknown", or “Mixed
 
 __DONOR_ETHNICITY__ - The ethnicity of the donor that provided the primary cell. NA if not available. If dealing with small/vulnerable populations consider identifiability issues.
 
-__PASSAGE_IF_EXPANDED__ – If the primary cell culture has been expanded, the number of times the cell culture has been re-plated and allowed to grow back to confluency or to some maximum density if using suspension cultures. NA if no expansion.
+__PASSAGE_IF_EXPANDED__ - If the primary cell culture has been expanded, the number of times the cell culture has been re-plated and allowed to grow back to confluency or to some maximum density if using suspension cultures. NA if no expansion.
 
-Primary Tissue
+#### Primary Tissue
 
 __MOLECULE__ - (Controlled Vocabulary) The type of molecule that was extracted from the biological material. Include one of the following: total RNA, polyA RNA, cytoplasmic RNA, nuclear RNA, genomic DNA, protein, or other.
 
@@ -134,11 +134,11 @@ __BIOMATERIAL_PROVIDER__ - The name of the company, laboratory or person that pr
 
 __BIOMATERIAL_TYPE:__ Primary Tissue
 
-__TISSUE_TYPE__ – The type of tissue.
+__TISSUE_TYPE__ - The type of tissue.
 
-__TISSUE_DEPOT__ – Details about the anatomical location from which the primary tissue was collected.
+__TISSUE_DEPOT__ - Details about the anatomical location from which the primary tissue was collected.
 
-__COLLECTION_METHOD__ – The protocol for collecting the primary tissue.
+__COLLECTION_METHOD__ - The protocol for collecting the primary tissue.
 
 __DONOR_ID__ - An identifying designation for the donor that provided the primary tissue.
 
@@ -154,9 +154,9 @@ __DONOR_SEX__ - (Controlled Vocabulary) "Male", "Female", "Unknown", or “Mixed
 
 __DONOR_ETHNICITY__ - The ethnicity of the donor that provided the primary tissue. NA if not available. If dealing with small/vulnerable populations consider identifiability issues.
 
-__EXPERIMENTS__ 
+## __EXPERIMENTS__ 
 
-Chromatin Accessibility
+#### Chromatin Accessibility
 
 __EXPERIMENT_TYPE:__ Chromatin Accessibility
 
@@ -164,7 +164,7 @@ __EXPERIMENT_ONTOLOGY_URI__ - (Ontology) links to experiment ontology informatio
 
 __EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
 
-__DNASE_PROTOCOL__ – The protocol used for DNAse treatment.
+__DNASE_PROTOCOL__ - The protocol used for DNAse treatment.
 
 __WGBS__ (NOTE: this is a new name to be used instead of Bisulfite-Seq )
 
@@ -176,37 +176,37 @@ __EXTRACTION_PROTOCOL_TYPE_OF_SONICATOR__ - The type of sonicator used for extra
 
 __EXTRACTION_PROTOCOL_SONICATION_CYCLES__ - The number of sonication cycles used for extraction.
 
-__DNA_PREPARATION_INITIAL_DNA_QNTY__ – The initial DNA quantity used in preparation.
+__DNA_PREPARATION_INITIAL_DNA_QNTY__ - The initial DNA quantity used in preparation.
 
-__DNA_PREPARATION_FRAGMENT_SIZE_RANGE__ – The DNA fragment size range used in preparation.
+__DNA_PREPARATION_FRAGMENT_SIZE_RANGE__ - The DNA fragment size range used in preparation.
 
-__DNA_PREPARATION_ADAPTOR_SEQUENCE__ – The sequence of the adaptor used in preparation.
+__DNA_PREPARATION_ADAPTOR_SEQUENCE__ - The sequence of the adaptor used in preparation.
 
-__DNA_PREPARATION_ADAPTOR_LIGATION_PROTOCOL__ – The protocol used for adaptor ligation.
+__DNA_PREPARATION_ADAPTOR_LIGATION_PROTOCOL__ - The protocol used for adaptor ligation.
 
-__DNA_PREPARATION_POST-LIGATION_FRAGMENT_SIZE_SELECTION__ – The fragment size selection after adaptor ligation.
+__DNA_PREPARATION_POST-LIGATION_FRAGMENT_SIZE_SELECTION__ - The fragment size selection after adaptor ligation.
 
-__BISULFITE_CONVERSION_PROTOCOL__ – The bisulfite conversion protocol.
+__BISULFITE_CONVERSION_PROTOCOL__ - The bisulfite conversion protocol.
 
-__BISULFITE_CONVERSION_PERCENT__ – The bisulfite conversion percent and how it was determined.
+__BISULFITE_CONVERSION_PERCENT__ - The bisulfite conversion percent and how it was determined.
 
-__LIBRARY_GENERATION_PCR_TEMPLATE_CONC__ – The PCR template concentration for library generation.
+__LIBRARY_GENERATION_PCR_TEMPLATE_CONC__ - The PCR template concentration for library generation.
 
-__LIBRARY_GENERATION_PCR_POLYMERASE_TYPE__ – The PCR polymerase used for library generation
+__LIBRARY_GENERATION_PCR_POLYMERASE_TYPE__ - The PCR polymerase used for library generation
 
-__LIBRARY_GENERATION_PCR_THERMOCYCLING_PROGRAM__ – The thermocycling program used for library generation.
+__LIBRARY_GENERATION_PCR_THERMOCYCLING_PROGRAM__ - The thermocycling program used for library generation.
 
-__LIBRARY_GENERATION_PCR_NUMBER_CYCLES__ – The number of PCR cycles used for library generation.
+__LIBRARY_GENERATION_PCR_NUMBER_CYCLES__ - The number of PCR cycles used for library generation.
 
-__LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE__ – The sequence of the PCR forward primer used for library generation.
+__LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE__ - The sequence of the PCR forward primer used for library generation.
 
-__LIBRARY_GENERATION_PCR_R_PRIMER_SEQUENCE__ – The sequence of the PCR reverse primer used for library generation.
+__LIBRARY_GENERATION_PCR_R_PRIMER_SEQUENCE__ - The sequence of the PCR reverse primer used for library generation.
 
-__LIBRARY_GENERATION_PCR_PRIMER_CONC__ – The concentration of the PCR primers used for library generation.
+__LIBRARY_GENERATION_PCR_PRIMER_CONC__ - The concentration of the PCR primers used for library generation.
 
-__LIBRARY_GENERATION_PCR_PRODUCT_ISOLATION_PROTOCOL__ – The protocol for isolating PCR products used for library generation.
+__LIBRARY_GENERATION_PCR_PRODUCT_ISOLATION_PROTOCOL__ - The protocol for isolating PCR products used for library generation.
 
-MeDIP-Seq
+#### MeDIP-Seq
 
 __EXPERIMENT_TYPE:__ DNA Methylation
 
@@ -218,39 +218,39 @@ __EXTRACTION_PROTOCOL_TYPE_OF_SONICATOR__ - The type of sonicator used for extra
 
 __EXTRACTION_PROTOCOL_SONICATION_CYCLES__ - The number of sonication cycles used for extraction.
 
-MeDIP_PROTOCOL – The MeDIP protocol used.
+__MeDIP_PROTOCOL__ - The MeDIP protocol used.
 
-MeDIP_PROTOCOL_DNA_AMOUNT – The amount of DNA used in the MeDIP protocol.
+__MeDIP_PROTOCOL_DNA_AMOUNT__ - The amount of DNA used in the MeDIP protocol.
 
-MeDIP_PROTOCOL_BEAD_TYPE – The type of bead used in the MeDIP protocol.
+__MeDIP_PROTOCOL_BEAD_TYPE__ - The type of bead used in the MeDIP protocol.
 
-MeDIP_PROTOCOL_BEAD_AMOUNT – The amount of beads used in the MeDIP protocol.
+__MeDIP_PROTOCOL_BEAD_AMOUNT__ - The amount of beads used in the MeDIP protocol.
 
-MeDIP_PROTOCOL_ANTIBODY_AMOUNT – The amount of antibody used in the MeDIP protocol.
+__MeDIP_PROTOCOL_ANTIBODY_AMOUNT__ - The amount of antibody used in the MeDIP protocol.
 
-MeDIP_ANTIBODY – The specific antibody used in the MeDIP protocol.
+__MeDIP_ANTIBODY__ - The specific antibody used in the MeDIP protocol.
 
-MeDIP_ANTIBODY_PROVIDER - The name of the company, laboratory or person that provided the antibody.
+__MeDIP_ANTIBODY_PROVIDER__ - The name of the company, laboratory or person that provided the antibody.
 
-MeDIP_ANTIBODY_CATALOG – The catalog from which the antibody was purchased.
+__MeDIP_ANTIBODY_CATALOG__ - The catalog from which the antibody was purchased.
 
-MeDIP_ANTIBODY_LOT – The lot identifier of the antibody.
+__MeDIP_ANTIBODY_LOT__ - The lot identifier of the antibody.
 
-MRE-Seq
+## MRE-Seq
 
 __EXPERIMENT_TYPE:__ DNA Methylation
 
 __EXPERIMENT_ONTOLOGY_URI__ - (Ontology) elements that contain links to experiment ontology information.
 
-__MRE_PROTOCOL__ – The MRE protocol.
+__MRE_PROTOCOL__ - The MRE protocol.
 
-__MRE_PROTOCOL_CHROMATIN_AMOUNT__ – The amount of chromatin used in the MRE protocol.
+__MRE_PROTOCOL_CHROMATIN_AMOUNT__ - The amount of chromatin used in the MRE protocol.
 
-__MRE_PROTOCOL_RESTRICTION_ENZYME__ – The restriction enzyme(s) used in the MRE protocol.
+__MRE_PROTOCOL_RESTRICTION_ENZYME__ - The restriction enzyme(s) used in the MRE protocol.
 
-__MRE_PROTOCOL_SIZE_FRACTION__ – The size of the fragments selected in the MRE protocol.
+__MRE_PROTOCOL_SIZE_FRACTION__ - The size of the fragments selected in the MRE protocol.
 
-Chip-Seq Input
+## Chip-Seq Input
 
 __EXPERIMENT_TYPE:__ ChIP-Seq Input
 
@@ -264,13 +264,11 @@ __EXTRACTION_PROTOCOL_SONICATION_CYCLES__ - The number of sonication cycles used
 
 __CHIP_PROTOCOL:__ Input
 
-__CHIP_PROTOCOL_CHROMATIN_AMOUNT–__ The amount of chromatin used in the ChIP protocol.
+__CHIP_PROTOCOL_CHROMATIN_AMOUNT-__ The amount of chromatin used in the ChIP protocol.
 
-Chip-Seq
+## Chip-Seq
 
-__EXPERIMENT_TYPE:__ 'Histone H3K4me1','Histone H3K4me3','Histone
-
-H3K9me3','Histone H3K9ac','Histone H3K27me3', 'Histone H3K36me3', etc.
+__EXPERIMENT_TYPE:__ 'Histone H3K4me1','Histone H3K4me3','Histone H3K9me3','Histone H3K9ac','Histone H3K27me3', 'Histone H3K36me3', etc.
 
 __EXPERIMENT_ONTOLOGY_URI__ - (Ontology) links to experiment ontology information.
 
@@ -280,7 +278,7 @@ __EXTRACTION_PROTOCOL_TYPE_OF_SONICATOR__ - The type of sonicator used for extra
 
 __EXTRACTION_PROTOCOL_SONICATION_CYCLES__ - The number of sonication cycles used for extraction.
 
-__CHIP_PROTOCOL__ – The ChIP protocol used.
+__CHIP_PROTOCOL__ - The ChIP protocol used.
 
 __CHIP_PROTOCOL_CHROMATIN_AMOUNT__ - The amount of chromatin used in the ChIP protocol.
 
@@ -288,21 +286,21 @@ __CHIP_PROTOCOL_BEAD_TYPE__ - The type of bead used in the ChIP protocol.
 
 __CHIP_PROTOCOL_BEAD_AMOUNT__ - The amount of beads used in the ChIP protocol.
 
-__CHIP_PROTOCOL_ANTIBODY_AMOUNT__ – The amount of antibody used in the ChIP protocol.
+__CHIP_PROTOCOL_ANTIBODY_AMOUNT__ - The amount of antibody used in the ChIP protocol.
 
 __CHIP_ANTIBODY__ - The specific antibody used in the ChIP protocol.
 
 __CHIP_ANTIBODY_PROVIDER__ - The name of the company, laboratory or person that provided the antibody.
 
-__CHIP_ANTIBODY_CATALOG__ – The catalog from which the antibody was purchased.
+__CHIP_ANTIBODY_CATALOG__ - The catalog from which the antibody was purchased.
 
-__CHIP_ANTIBODY_LOT__ – The lot identifier of the antibody.
+__CHIP_ANTIBODY_LOT__ - The lot identifier of the antibody.
 
 __CHIP_PROTOCOL_CROSSLINK_TIME__ - The timespan in which the chromatin is crosslinked
 
-__LIBRARY_GENERATION_FRAGMENT_SIZE_RANGE__ – The fragment size range of the preparation.
+__LIBRARY_GENERATION_FRAGMENT_SIZE_RANGE__ - The fragment size range of the preparation.
 
-mRNA-seq
+## mRNA-seq
 
 __EXPERIMENT_TYPE:__ mRNA-Seq
 
@@ -310,41 +308,41 @@ __EXPERIMENT_ONTOLOGY_URI__ - (Ontology) links to experiment ontology informatio
 
 __EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
 
-__EXTRACTION_PROTOCOL_MRNA_ENRICHMENT__ – The mRNA enrichment method used in the extraction protocol.
+__EXTRACTION_PROTOCOL_MRNA_ENRICHMENT__ - The mRNA enrichment method used in the extraction protocol.
 
-__EXTRACTION_PROTOCOL_FRAGMENTATION__ – The fragmentation method used in the extraction protocol.
+__EXTRACTION_PROTOCOL_FRAGMENTATION__ - The fragmentation method used in the extraction protocol.
 
-__MRNA_PREPARATION_FRAGMENT_SIZE_RANGE__ – The mRNA fragment size range of the preparation.
+__MRNA_PREPARATION_FRAGMENT_SIZE_RANGE__ - The mRNA fragment size range of the preparation.
 
-__RNA_PREPARATION_5'_RNA_ADAPTER_SEQUENCE__ – The sequence of the 5’ RNA adapter used in preparation.
+__RNA_PREPARATION_5'_RNA_ADAPTER_SEQUENCE__ - The sequence of the 5’ RNA adapter used in preparation.
 
 __RNA_PREPARATION_3'_RNA_ADAPTER_SEQUENCE__ - The sequence of the 3’ RNA adapter used in preparation.
 
-__RNA_PREPARATION_REVERSE_TRANSCRIPTION_PRIMER_SEQUENCE__ – The sequence of the primer for reverse transcription used in preparation.
+__RNA_PREPARATION_REVERSE_TRANSCRIPTION_PRIMER_SEQUENCE__ - The sequence of the primer for reverse transcription used in preparation.
 
-__RNA_PREPARATION_5'_DEPHOSPHORYLATION__ – The protocol for 5’ dephosphorylation used in preparation.
+__RNA_PREPARATION_5'_DEPHOSPHORYLATION__ - The protocol for 5’ dephosphorylation used in preparation.
 
-__RNA_PREPARATION_5'_PHOSPHORYLATION__ – The protocol for 5’ phosphorylation used in preparation.
+__RNA_PREPARATION_5'_PHOSPHORYLATION__ - The protocol for 5’ phosphorylation used in preparation.
 
-__RNA_PREPARATION_3'_RNA__ ADAPTER_LIGATION_PROTOCOL – The protocol for 3’ adapter ligation used in preparation.
+__RNA_PREPARATION_3'_RNA__ ADAPTER_LIGATION_PROTOCOL - The protocol for 3’ adapter ligation used in preparation.
 
 __RNA_PREPARATION_5'_RNA_ADAPTER_LIGATION_PROTOCOL__ - The protocol for 5’ adapter ligation used in preparation.
 
-__LIBRARY_GENERATION_PCR_TEMPLATE_CONC__ – The PCR template concentration for library generation.
+__LIBRARY_GENERATION_PCR_TEMPLATE_CONC__ - The PCR template concentration for library generation.
 
-__LIBRARY_GENERATION_PCR_POLYMERASE_TYPE__ – The PCR polymerase used for library generation
+__LIBRARY_GENERATION_PCR_POLYMERASE_TYPE__ - The PCR polymerase used for library generation
 
-__LIBRARY_GENERATION_PCR_THERMOCYCLING_PROGRAM__ – The thermocycling program used for library generation.
+__LIBRARY_GENERATION_PCR_THERMOCYCLING_PROGRAM__ - The thermocycling program used for library generation.
 
-__LIBRARY_GENERATION_PCR_NUMBER_CYCLES__ – The number of PCR cycles used for library generation.
+__LIBRARY_GENERATION_PCR_NUMBER_CYCLES__ - The number of PCR cycles used for library generation.
 
-__LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE__ – The sequence of the PCR forward primer used for library generation.
+__LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE__ - The sequence of the PCR forward primer used for library generation.
 
-__LIBRARY_GENERATION_PCR_R_PRIMER_SEQUENCE__ – The sequence of the PCR reverse primer used for library generation.
+__LIBRARY_GENERATION_PCR_R_PRIMER_SEQUENCE__ - The sequence of the PCR reverse primer used for library generation.
 
-__LIBRARY_GENERATION_PCR_PRIMER_CONC__ – The concentration of the PCR primers used for library generation.
+__LIBRARY_GENERATION_PCR_PRIMER_CONC__ - The concentration of the PCR primers used for library generation.
 
-__LIBRARY_GENERATION_PCR_PRODUCT_ISOLATION_PROTOCOL__ – The protocol for isolating PCR products used for library generation.
+__LIBRARY_GENERATION_PCR_PRODUCT_ISOLATION_PROTOCOL__ - The protocol for isolating PCR products used for library generation.
 
 __TEMPLATE_TYPE__ - mRNA or cDNA - The type of template.
 
@@ -360,15 +358,15 @@ __LIBRARY_GENERATION_PROTOCOL__ - The protocol used to generate the library.
 
 __LIBRARY_GENERATION_FRAGMENTATION__ - The fragmentation method used in the library protocol.
 
-__LIBRARY_GENERATION_FRAGMENT_SIZE_RANGE__ – The fragment size range of the preparation.
+__LIBRARY_GENERATION_FRAGMENT_SIZE_RANGE__ - The fragment size range of the preparation.
 
-__LIBRARY_GENERATION_3'_ADAPTER_SEQUENCE__ – The sequence of the 3' adapter used for library generation.
+__LIBRARY_GENERATION_3'_ADAPTER_SEQUENCE__ - The sequence of the 3' adapter used for library generation.
 
-__LIBRARY_GENERATION_5'_ADAPTER_SEQUENCE__ – The sequence of the 5' adapter used for library generation.
+__LIBRARY_GENERATION_5'_ADAPTER_SEQUENCE__ - The sequence of the 5' adapter used for library generation.
 
-smRNA-Seq
+## smRNA-Seq
 
-EXPERIMENT_TYPE:smRNA-Seq
+__EXPERIMENT_TYPE__ - smRNA-Seq
 
 __EXPERIMENT_ONTOLOGY_URI__ - (Ontology) links to experiment ontology information.
 
@@ -378,35 +376,37 @@ __EXTRACTION_PROTOCOL_SMRNA_ENRICHMENT__ - The smRNA enrichment method used in t
 
 __SMRNA_PREPARATION_INITIAL_SMRNA_QNTY__ - The initial smRNA quantity used in preparation.
 
-__RNA_PREPARATION_5'_RNA_ADAPTER_SEQUENCE__ – The sequence of the 5’ RNA adapter used in preparation.
+__RNA_PREPARATION_5'_RNA_ADAPTER_SEQUENCE__ - The sequence of the 5’ RNA adapter used in preparation.
 
 __RNA_PREPARATION_3'_RNA_ADAPTER_SEQUENCE__ - The sequence of the 3’ RNA adapter used in preparation.
 
-__RNA_PREPARATION_REVERSE_TRANSCRIPTION_PRIMER_SEQUENCE__ – The sequence of the primer for reverse transcription used in preparation.
+__RNA_PREPARATION_REVERSE_TRANSCRIPTION_PRIMER_SEQUENCE__ - The sequence of the primer for reverse transcription used in preparation.
 
-__RNA_PREPARATION_3'_RNA__ ADAPTER_LIGATION_PROTOCOL – The protocol for 3’ adapter ligation used in preparation.
+__RNA_PREPARATION_3'_RNA__ ADAPTER_LIGATION_PROTOCOL - The protocol for 3’ adapter ligation used in preparation.
 
 __RNA_PREPARATION_5'_RNA_ADAPTER_LIGATION_PROTOCOL__ - The protocol for 5’ adapter ligation used in preparation.
 
 __RNA_PREPARATION_REVERSE_TRANSCRIPTION_PROTOCOL__ - The protocol for reverse transcription used in preparation.
 
-__LIBRARY_GENERATION_PCR_TEMPLATE_CONC__ – The PCR template concentration for library generation.
+__LIBRARY_GENERATION_PCR_TEMPLATE_CONC__ - The PCR template concentration for library generation.
 
-__LIBRARY_GENERATION_PCR_POLYMERASE_TYPE__ – The PCR polymerase used for library generation
+__LIBRARY_GENERATION_PCR_POLYMERASE_TYPE__ - The PCR polymerase used for library generation
 
-__LIBRARY_GENERATION_PCR_THERMOCYCLING_PROGRAM__ – The thermocycling program used for library generation.
+__LIBRARY_GENERATION_PCR_THERMOCYCLING_PROGRAM__ - The thermocycling program used for library generation.
 
-__LIBRARY_GENERATION_PCR_NUMBER_CYCLES__ – The number of PCR cycles used for library generation.
+__LIBRARY_GENERATION_PCR_NUMBER_CYCLES__ - The number of PCR cycles used for library generation.
 
-__LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE__ – The sequence of the PCR forward primer used for library generation.
+__LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE__ - The sequence of the PCR forward primer used for library generation.
 
-__LIBRARY_GENERATION_PCR_R_PRIMER_SEQUENCE__ – The sequence of the PCR reverse primer used for library generation.
+__LIBRARY_GENERATION_PCR_R_PRIMER_SEQUENCE__ - The sequence of the PCR reverse primer used for library generation.
 
-__LIBRARY_GENERATION_PCR_PRIMER_CONC__ – The concentration of the PCR primers used for library generation.
+__LIBRARY_GENERATION_PCR_PRIMER_CONC__ - The concentration of the PCR primers used for library generation.
 
-__LIBRARY_GENERATION_PCR_PRODUCT_ISOLATION_PROTOCOL__ – The protocol for isolating PCR products used for library generation.
+__LIBRARY_GENERATION_PCR_PRODUCT_ISOLATION_PROTOCOL__ - The protocol for isolating PCR products used for library generation.
 
-## Level 1 Data (SRA: ANALYSIS_TYPE -REFERENCE_ALIGNMENT)
+## Level 1 Data
+
+### SRA: ANALYSIS_TYPE - REFERENCE_ALIGNMENT
 
 __DATA_ANALYSIS_LEVEL__ - 1
 
@@ -414,33 +414,37 @@ __EXPERIMENT_TYPE__ - The type of experiment (Chromatin Accessibility, Bisulfite
 
 __EXPERIMENT_ONTOLOGY_URI__ - (Ontology) links to experiment ontology information.
 
-__GENOME_ASSEMBLY__ – The genome assembly to which the reads are mapped.
+__GENOME_ASSEMBLY__ - The genome assembly to which the reads are mapped.
 
-__SOFTWARE__ – The name of the software used for mapping.
+__SOFTWARE__ - The name of the software used for mapping.
 
-__SOFTWARE_VERSION__ – The version of the software used for mapping.
+__SOFTWARE_VERSION__ - The version of the software used for mapping.
 
 __SOFTWARE_COMMAND_LINE__ - The command line used to run the software.
 
 __ANALYSIS_PROTOCOL__ - Description of how the analysis was performed.
 
-__MAXIMUM_ALIGNMENT_LENGTH__ – The maximum read alignment length supported by the software. If the software aligns the entire read use “Read Length”.
+__MAXIMUM_ALIGNMENT_LENGTH__ - The maximum read alignment length supported by the software. If the software aligns the entire read use “Read Length”.
 
-__MISMATCHES_ALLOWED__ – The number of mismatches allowed in an alignment.
+__MISMATCHES_ALLOWED__ - The number of mismatches allowed in an alignment.
 
-__ALIGNMENTS_ALLOWED__ – The number of locations to which a read is allowed to align.
+__ALIGNMENTS_ALLOWED__ - The number of locations to which a read is allowed to align.
 
-__TREATMENT_OF_MULTIPLE_ALIGNMENTS__ – How reads aligning to multiple locations are treated.
+__TREATMENT_OF_MULTIPLE_ALIGNMENTS__ - How reads aligning to multiple locations are treated.
 
-__TREATMENT_OF_IDENTICAL_ALIGNMENTS_OF_MULTIPLE_READS__ – How multiple reads aligning to the same location are treated. This applies to clonal duplicate removal.
+__TREATMENT_OF_IDENTICAL_ALIGNMENTS_OF_MULTIPLE_READS__ - How multiple reads aligning to the same location are treated. This applies to clonal duplicate removal.
 
-__ALIGNMENT_POSTPROCESSING__ – Any postprocessing applied to the alignments.
+__ALIGNMENT_POSTPROCESSING__ - Any postprocessing applied to the alignments.
 
-__NUMBER_OF_MAPPED_READS__ – The number of mapped reads.
+__NUMBER_OF_MAPPED_READS__ - The number of mapped reads.
 
-Quality Control – Quality control related analysis attributes. These are dependent on the type of experiment.
+### Quality Control
 
-## Level 2 Data (SRA: ANALYSIS_TYPE - ABUNDANCE_MEASUREMENT)
+Quality control related analysis attributes. These are dependent on the type of experiment.
+
+## Level 2 Data
+
+### SRA: ANALYSIS_TYPE - ABUNDANCE_MEASUREMENT
 
 __DATA_ANALYSIS_LEVEL:__ 2
 
@@ -448,22 +452,24 @@ __EXPERIMENT_TYPE__ - The type of experiment (Chromatin Accessibility, Bisulfite
 
 __EXPERIMENT_ONTOLOGY_URI__ - (Ontology) links to experiment ontology information.
 
-__GENOME_ASSEMBLY__ – The genome assembly to which the reads are mapped.
+__GENOME_ASSEMBLY__ - The genome assembly to which the reads are mapped.
 
-__SOFTWARE__ – The name of the software used for determining signal (read density).
+__SOFTWARE__ - The name of the software used for determining signal (read density).
 
-__SOFTWARE_VERSION__ – The version of the software used for determining signal (read density).
+__SOFTWARE_VERSION__ - The version of the software used for determining signal (read density).
 
 __SOFTWARE_COMMAND_LINE__ - The command line used to run the software.
 
 __ANALYSIS_PROTOCOL__ - Description of how the analysis was performed.
 
-__READ_EXTENSION__ – If read mappings are extended before determining signal (read density), the length to which the read is extended in bp. NA if not applicable.
+__READ_EXTENSION__ - If read mappings are extended before determining signal (read density), the length to which the read is extended in bp. NA if not applicable.
 
-__GENOMIC_WINDOW__ – The bp size of the window in which the signal (read density) is calculated.
+__GENOMIC_WINDOW__ - The bp size of the window in which the signal (read density) is calculated.
 
-__TREATMENT_OF_REGIONS_PRONE_TO_MULTIPLE_ALIGNMENTS__ – Any treatment of regions, such as repeats, which are prone to multiple alignments. NA if not applicable.
+__TREATMENT_OF_REGIONS_PRONE_TO_MULTIPLE_ALIGNMENTS__ - Any treatment of regions, such as repeats, which are prone to multiple alignments. NA if not applicable.
 
-__NUMBER_OF_MAPPED_READS__ – The number of mapped reads.
+__NUMBER_OF_MAPPED_READS__ - The number of mapped reads.
 
-Quality Control – Quality control related analysis attributes. These are dependent on the type of experiment.
+### Quality Control
+
+Quality control related analysis attributes. These are dependent on the type of experiment.
