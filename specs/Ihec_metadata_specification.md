@@ -1,4 +1,4 @@
-## Preamble
+# Preamble
 
 ... link to preamble with images here ...
 
@@ -21,6 +21,8 @@ __Only__ terms from following ontologies are acceptable for annotating the metad
 ##### Experiment Ontologies
 
 * Assays and Platforms - Ontology for Biomedical Investigations (OBI)
+
+# IHEC Extensions 
 
 ## Level 0 Data
 
