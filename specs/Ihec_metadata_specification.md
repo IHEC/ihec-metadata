@@ -1,4 +1,10 @@
-## Only terms from following ontologies are acceptable for annotating the metadata:
+## Preamble
+
+... link to preamble with images here ...
+
+## Ontologies
+
+__Only__ terms from following ontologies are acceptable for annotating the metadata:
 
 ##### Sample Ontologies
 
