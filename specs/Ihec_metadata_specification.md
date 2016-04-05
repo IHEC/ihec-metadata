@@ -1,6 +1,28 @@
 # Preamble
 
-... link to preamble with images here ...
+The IHEC metadata standards are extension of the standards used by the Roadmap Epigenomics Project. Please refer to Sections 1 and 2 of original specification ( https://github.com/IHEC/ihec-metadata/blob/master/specs/original_docs/IHEC-Metadata.pdf ) archived at for the data and metadata model.
+
+This document describes metadata elements extending the SRA XML Schema 1.2
+
+# Metadata Elements Extending SRA XML Schema 1.2
+
+(quoting Section 3 Introuction, https://github.com/IHEC/ihec-metadata/blob/master/specs/original_docs/IHEC-Metadata.pdf  )
+
+The core SRA XML elements are augmented by additional attributes defined for purposes of the NIH Roadmap Epigenomics as described in the official IHEC ecosystem repository. 
+
+The same attribute may be used multiple times in a single XML record. This may be most useful for supplying URIs to multiple ontologies or for supplying multiple references to a single ontology such as in the case of DISEASE_ONTOLOGY_URI.
+
+Documentation for the core SRA XML elements is here:
+
+http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=doc
+
+The SRA XML schema http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=docas are here:
+
+* http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=xml_schemas
+
+Tags with controlled vocabularies are labelled as “Controlled Vocabulary”
+
+Tags with ontolgies are labelled as “Ontology”
 
 ## Ontologies
 
