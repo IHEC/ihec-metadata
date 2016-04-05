@@ -1,6 +1,6 @@
 # Preamble
 
-The IHEC metadata standards are extension of the standards used by the Roadmap Epigenomics Project. Please refer to Sections 1 and 2 of original specification ( https://github.com/IHEC/ihec-metadata/blob/master/specs/original_docs/IHEC-Metadata.pdf ) archived at for the data and metadata model.
+The IHEC metadata standards are extension of the standards used by the Roadmap Epigenomics Project. Please refer to Sections 1 and 2 of original specification (archived at https://github.com/IHEC/ihec-metadata/blob/master/specs/original_docs/IHEC-Metadata.pdf )  for the data and metadata model.
 
 This document describes metadata elements extending the SRA XML Schema 1.2
 
@@ -354,7 +354,7 @@ __RNA_PREPARATION_5'_DEPHOSPHORYLATION__ - The protocol for 5’ dephosphorylati
 
 __RNA_PREPARATION_5'_PHOSPHORYLATION__ - The protocol for 5’ phosphorylation used in preparation.
 
-__RNA_PREPARATION_3'_RNA__ ADAPTER_LIGATION_PROTOCOL - The protocol for 3’ adapter ligation used in preparation.
+__RNA_PREPARATION_3'_RNA_ADAPTER_LIGATION_PROTOCOL__ - The protocol for 3’ adapter ligation used in preparation.
 
 __RNA_PREPARATION_5'_RNA_ADAPTER_LIGATION_PROTOCOL__ - The protocol for 5’ adapter ligation used in preparation.
 
