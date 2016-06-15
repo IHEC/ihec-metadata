@@ -54,6 +54,8 @@ __Only__ terms from following ontologies are acceptable for annotating the metad
 
 __MOLECULE__ - (Controlled Vocabulary) The type of molecule that was extracted from the biological material. Include one of the following: total RNA, polyA RNA, cytoplasmic RNA, nuclear RNA, genomic DNA, protein, or other.
 
+__MOLECULE_ONTOLOGY_URI__ - (Ontology) links to molecule ontology information
+
 __SAMPLE_ONTOLOGY_URI__ - (Ontology) links to sample ontology information.
 
 __DISEASE_ONTOLOGY_URI__ - (Ontology) links to disease ontology information. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute.
@@ -83,6 +85,8 @@ __BATCH__ - The batch from which the cell line is derived. Primarily applicable 
 #### Primary Cell
 
 __MOLECULE__ - (Controlled Vocabulary) The type of molecule that was extracted from the biological material. Include one of the following: total RNA, polyA RNA, cytoplasmic RNA, nuclear RNA, genomic DNA, protein, or other.
+
+__MOLECULE_ONTOLOGY_URI__ - (Ontology) links to molecule ontology information
 
 __SAMPLE_ONTOLOGY_URI__ - (Ontology) links to sample ontology information.
 
@@ -117,6 +121,8 @@ __PASSAGE_IF_EXPANDED__ - If the primary cell has been expanded, the number of t
 #### Primary Cell Culture
 
 __MOLECULE__ - (Controlled Vocabulary) The type of molecule that was extracted from the biological material. Include one of the following: total RNA, polyA RNA, cytoplasmic RNA, nuclear RNA, genomic DNA, protein, or other.
+
+__MOLECULE_ONTOLOGY_URI__ - (Ontology) links to molecule ontology information
 
 __SAMPLE_ONTOLOGY_URI__ - (Ontology) links to sample ontology information.
 
@@ -153,6 +159,8 @@ __PASSAGE_IF_EXPANDED__ - If the primary cell culture has been expanded, the num
 #### Primary Tissue
 
 __MOLECULE__ - (Controlled Vocabulary) The type of molecule that was extracted from the biological material. Include one of the following: total RNA, polyA RNA, cytoplasmic RNA, nuclear RNA, genomic DNA, protein, or other.
+
+__MOLECULE_ONTOLOGY_URI__ - (Ontology) links to molecule ontology information
 
 __SAMPLE_ONTOLOGY_URI__ - (Ontology) links to sample ontology information.
 
@@ -333,6 +341,70 @@ __LIBRARY_GENERATION_FRAGMENT_SIZE_RANGE__ - The fragment size range of the prep
 ## mRNA-seq
 
 __EXPERIMENT_TYPE:__ mRNA-Seq
+
+__EXPERIMENT_ONTOLOGY_URI__ - (Ontology) links to experiment ontology information.
+
+__EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
+
+__EXTRACTION_PROTOCOL_MRNA_ENRICHMENT__ - The mRNA enrichment method used in the extraction protocol.
+
+__EXTRACTION_PROTOCOL_FRAGMENTATION__ - The fragmentation method used in the extraction protocol.
+
+__MRNA_PREPARATION_FRAGMENT_SIZE_RANGE__ - The mRNA fragment size range of the preparation.
+
+__RNA_PREPARATION_5'_RNA_ADAPTER_SEQUENCE__ - The sequence of the 5’ RNA adapter used in preparation.
+
+__RNA_PREPARATION_3'_RNA_ADAPTER_SEQUENCE__ - The sequence of the 3’ RNA adapter used in preparation.
+
+__RNA_PREPARATION_REVERSE_TRANSCRIPTION_PRIMER_SEQUENCE__ - The sequence of the primer for reverse transcription used in preparation.
+
+__RNA_PREPARATION_5'_DEPHOSPHORYLATION__ - The protocol for 5’ dephosphorylation used in preparation.
+
+__RNA_PREPARATION_5'_PHOSPHORYLATION__ - The protocol for 5’ phosphorylation used in preparation.
+
+__RNA_PREPARATION_3'_RNA_ADAPTER_LIGATION_PROTOCOL__ - The protocol for 3’ adapter ligation used in preparation.
+
+__RNA_PREPARATION_5'_RNA_ADAPTER_LIGATION_PROTOCOL__ - The protocol for 5’ adapter ligation used in preparation.
+
+__LIBRARY_GENERATION_PCR_TEMPLATE_CONC__ - The PCR template concentration for library generation.
+
+__LIBRARY_GENERATION_PCR_POLYMERASE_TYPE__ - The PCR polymerase used for library generation
+
+__LIBRARY_GENERATION_PCR_THERMOCYCLING_PROGRAM__ - The thermocycling program used for library generation.
+
+__LIBRARY_GENERATION_PCR_NUMBER_CYCLES__ - The number of PCR cycles used for library generation.
+
+__LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE__ - The sequence of the PCR forward primer used for library generation.
+
+__LIBRARY_GENERATION_PCR_R_PRIMER_SEQUENCE__ - The sequence of the PCR reverse primer used for library generation.
+
+__LIBRARY_GENERATION_PCR_PRIMER_CONC__ - The concentration of the PCR primers used for library generation.
+
+__LIBRARY_GENERATION_PCR_PRODUCT_ISOLATION_PROTOCOL__ - The protocol for isolating PCR products used for library generation.
+
+__TEMPLATE_TYPE__ - mRNA or cDNA - The type of template.
+
+__AMPLIFIED__ - True or False - Is the sample amplified?
+
+__PREPARATION_INITIAL_MRNA_QNTY__ -The initial mRNA quantity used in preparation.
+
+__PREPARATION_REVERSE_TRANSCRIPTION_PROTOCOL__ - The protocol for reverse transcription used in preparation.
+
+__PREPARATION_PCR_NUMBER_CYCLES__ - The number of PCR cycles used to amplify.
+
+__LIBRARY_GENERATION_PROTOCOL__ - The protocol used to generate the library.
+
+__LIBRARY_GENERATION_FRAGMENTATION__ - The fragmentation method used in the library protocol.
+
+__LIBRARY_GENERATION_FRAGMENT_SIZE_RANGE__ - The fragment size range of the preparation.
+
+__LIBRARY_GENERATION_3'_ADAPTER_SEQUENCE__ - The sequence of the 3' adapter used for library generation.
+
+__LIBRARY_GENERATION_5'_ADAPTER_SEQUENCE__ - The sequence of the 5' adapter used for library generation.
+
+## total-RNA-seq
+
+__EXPERIMENT_TYPE:__ total-RNA-Seq
 
 __EXPERIMENT_ONTOLOGY_URI__ - (Ontology) links to experiment ontology information.
 
