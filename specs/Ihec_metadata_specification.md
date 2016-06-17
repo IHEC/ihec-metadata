@@ -352,19 +352,19 @@ __EXTRACTION_PROTOCOL_FRAGMENTATION__ - The fragmentation method used in the ext
 
 __MRNA_PREPARATION_FRAGMENT_SIZE_RANGE__ - The mRNA fragment size range of the preparation.
 
-__RNA_PREPARATION_5'_RNA_ADAPTER_SEQUENCE__ - The sequence of the 5’ RNA adapter used in preparation.
+<strong>RNA_PREPARATION_5'_RNA_ADAPTER_SEQUENCE</strong> - The sequence of the 5’ RNA adapter used in preparation.
 
-__RNA_PREPARATION_3'_RNA_ADAPTER_SEQUENCE__ - The sequence of the 3’ RNA adapter used in preparation.
+<strong>RNA_PREPARATION_3'_RNA_ADAPTER_SEQUENCE</strong> - The sequence of the 3’ RNA adapter used in preparation.
 
 __RNA_PREPARATION_REVERSE_TRANSCRIPTION_PRIMER_SEQUENCE__ - The sequence of the primer for reverse transcription used in preparation.
 
-__RNA_PREPARATION_5'_DEPHOSPHORYLATION__ - The protocol for 5’ dephosphorylation used in preparation.
+<strong>RNA_PREPARATION_5'_DEPHOSPHORYLATION</strong> - The protocol for 5’ dephosphorylation used in preparation.
 
-__RNA_PREPARATION_5'_PHOSPHORYLATION__ - The protocol for 5’ phosphorylation used in preparation.
+<strong>RNA_PREPARATION_5'_PHOSPHORYLATION</strong> - The protocol for 5’ phosphorylation used in preparation.
 
-__RNA_PREPARATION_3'_RNA_ADAPTER_LIGATION_PROTOCOL__ - The protocol for 3’ adapter ligation used in preparation.
+<strong>RNA_PREPARATION_3'_RNA_ADAPTER_LIGATION_PROTOCOL</strong> - The protocol for 3’ adapter ligation used in preparation.
 
-__RNA_PREPARATION_5'_RNA_ADAPTER_LIGATION_PROTOCOL__ - The protocol for 5’ adapter ligation used in preparation.
+<strong>RNA_PREPARATION_5'_RNA_ADAPTER_LIGATION_PROTOCOL</strong> - The protocol for 5’ adapter ligation used in preparation.
 
 __LIBRARY_GENERATION_PCR_TEMPLATE_CONC__ - The PCR template concentration for library generation.
 
@@ -398,9 +398,9 @@ __LIBRARY_GENERATION_FRAGMENTATION__ - The fragmentation method used in the libr
 
 __LIBRARY_GENERATION_FRAGMENT_SIZE_RANGE__ - The fragment size range of the preparation.
 
-__LIBRARY_GENERATION_3'_ADAPTER_SEQUENCE__ - The sequence of the 3' adapter used for library generation.
+<strong>LIBRARY_GENERATION_3'_ADAPTER_SEQUENCE</strong> - The sequence of the 3' adapter used for library generation.
 
-__LIBRARY_GENERATION_5'_ADAPTER_SEQUENCE__ - The sequence of the 5' adapter used for library generation.
+<strong>LIBRARY_GENERATION_5'_ADAPTER_SEQUENCE</strong> - The sequence of the 5' adapter used for library generation.
 
 ## total-RNA-seq
 
@@ -416,19 +416,19 @@ __EXTRACTION_PROTOCOL_FRAGMENTATION__ - The fragmentation method used in the ext
 
 __MRNA_PREPARATION_FRAGMENT_SIZE_RANGE__ - The mRNA fragment size range of the preparation.
 
-__RNA_PREPARATION_5'_RNA_ADAPTER_SEQUENCE__ - The sequence of the 5’ RNA adapter used in preparation.
+<strong>RNA_PREPARATION_5'_RNA_ADAPTER_SEQUENCE</strong> - The sequence of the 5’ RNA adapter used in preparation.
 
-__RNA_PREPARATION_3'_RNA_ADAPTER_SEQUENCE__ - The sequence of the 3’ RNA adapter used in preparation.
+<strong>RNA_PREPARATION_3'_RNA_ADAPTER_SEQUENCE</strong> - The sequence of the 3’ RNA adapter used in preparation.
 
 __RNA_PREPARATION_REVERSE_TRANSCRIPTION_PRIMER_SEQUENCE__ - The sequence of the primer for reverse transcription used in preparation.
 
-__RNA_PREPARATION_5'_DEPHOSPHORYLATION__ - The protocol for 5’ dephosphorylation used in preparation.
+<strong>RNA_PREPARATION_5'_DEPHOSPHORYLATION</strong> - The protocol for 5’ dephosphorylation used in preparation.
 
-__RNA_PREPARATION_5'_PHOSPHORYLATION__ - The protocol for 5’ phosphorylation used in preparation.
+<strong>RNA_PREPARATION_5'_PHOSPHORYLATION</strong> - The protocol for 5’ phosphorylation used in preparation.
 
-__RNA_PREPARATION_3'_RNA_ADAPTER_LIGATION_PROTOCOL__ - The protocol for 3’ adapter ligation used in preparation.
+<strong>RNA_PREPARATION_3'_RNA_ADAPTER_LIGATION_PROTOCOL</strong> - The protocol for 3’ adapter ligation used in preparation.
 
-__RNA_PREPARATION_5'_RNA_ADAPTER_LIGATION_PROTOCOL__ - The protocol for 5’ adapter ligation used in preparation.
+<strong>RNA_PREPARATION_5'_RNA_ADAPTER_LIGATION_PROTOCOL</strong> - The protocol for 5’ adapter ligation used in preparation.
 
 __LIBRARY_GENERATION_PCR_TEMPLATE_CONC__ - The PCR template concentration for library generation.
 
@@ -462,9 +462,9 @@ __LIBRARY_GENERATION_FRAGMENTATION__ - The fragmentation method used in the libr
 
 __LIBRARY_GENERATION_FRAGMENT_SIZE_RANGE__ - The fragment size range of the preparation.
 
-__LIBRARY_GENERATION_3'_ADAPTER_SEQUENCE__ - The sequence of the 3' adapter used for library generation.
+<strong>LIBRARY_GENERATION_3'_ADAPTER_SEQUENCE</strong> - The sequence of the 3' adapter used for library generation.
 
-__LIBRARY_GENERATION_5'_ADAPTER_SEQUENCE__ - The sequence of the 5' adapter used for library generation.
+<strong>LIBRARY_GENERATION_5'_ADAPTER_SEQUENCE</strong> - The sequence of the 5' adapter used for library generation.
 
 ## smRNA-Seq
 
@@ -478,15 +478,15 @@ __EXTRACTION_PROTOCOL_SMRNA_ENRICHMENT__ - The smRNA enrichment method used in t
 
 __SMRNA_PREPARATION_INITIAL_SMRNA_QNTY__ - The initial smRNA quantity used in preparation.
 
-__RNA_PREPARATION_5'_RNA_ADAPTER_SEQUENCE__ - The sequence of the 5’ RNA adapter used in preparation.
+<strong>RNA_PREPARATION_5'_RNA_ADAPTER_SEQUENCE</strong> - The sequence of the 5’ RNA adapter used in preparation.
 
-__RNA_PREPARATION_3'_RNA_ADAPTER_SEQUENCE__ - The sequence of the 3’ RNA adapter used in preparation.
+<strong>RNA_PREPARATION_3'_RNA_ADAPTER_SEQUENCE</strong> - The sequence of the 3’ RNA adapter used in preparation.
 
 __RNA_PREPARATION_REVERSE_TRANSCRIPTION_PRIMER_SEQUENCE__ - The sequence of the primer for reverse transcription used in preparation.
 
-__RNA_PREPARATION_3'_RNA__ ADAPTER_LIGATION_PROTOCOL - The protocol for 3’ adapter ligation used in preparation.
+<strong>RNA_PREPARATION_3'_RNA__ ADAPTER_LIGATION_PROTOCOL</strong> - The protocol for 3’ adapter ligation used in preparation.
 
-__RNA_PREPARATION_5'_RNA_ADAPTER_LIGATION_PROTOCOL__ - The protocol for 5’ adapter ligation used in preparation.
+<strong>RNA_PREPARATION_5'_RNA_ADAPTER_LIGATION_PROTOCOL</strong> - The protocol for 5’ adapter ligation used in preparation.
 
 __RNA_PREPARATION_REVERSE_TRANSCRIPTION_PROTOCOL__ - The protocol for reverse transcription used in preparation.
 
