@@ -194,7 +194,7 @@ __DONOR_ETHNICITY__ - The ethnicity of the donor that provided the primary tissu
 
 ## __EXPERIMENTS__ 
 
-#### Chromatin Accessibility
+### Chromatin Accessibility
 
 __EXPERIMENT_TYPE:__ Chromatin Accessibility
 
@@ -204,7 +204,7 @@ __EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
 
 __DNASE_PROTOCOL__ - The protocol used for DNAse treatment.
 
-__WGBS__ (NOTE: this is a new name to be used instead of Bisulfite-Seq )
+### WGBS (NOTE: this is a new name to be used instead of Bisulfite-Seq )
 
 __EXPERIMENT_TYPE:__ DNA Methylation
 
@@ -244,7 +244,7 @@ __LIBRARY_GENERATION_PCR_PRIMER_CONC__ - The concentration of the PCR primers us
 
 __LIBRARY_GENERATION_PCR_PRODUCT_ISOLATION_PROTOCOL__ - The protocol for isolating PCR products used for library generation.
 
-#### MeDIP-Seq
+### MeDIP-Seq
 
 __EXPERIMENT_TYPE:__ DNA Methylation
 
@@ -274,7 +274,7 @@ __MeDIP_ANTIBODY_CATALOG__ - The catalog from which the antibody was purchased.
 
 __MeDIP_ANTIBODY_LOT__ - The lot identifier of the antibody.
 
-## MRE-Seq
+### MRE-Seq
 
 __EXPERIMENT_TYPE:__ DNA Methylation
 
@@ -288,7 +288,7 @@ __MRE_PROTOCOL_RESTRICTION_ENZYME__ - The restriction enzyme(s) used in the MRE 
 
 __MRE_PROTOCOL_SIZE_FRACTION__ - The size of the fragments selected in the MRE protocol.
 
-## Chip-Seq Input
+### Chip-Seq Input
 
 __EXPERIMENT_TYPE:__ ChIP-Seq Input
 
@@ -304,7 +304,7 @@ __CHIP_PROTOCOL:__ Input
 
 __CHIP_PROTOCOL_CHROMATIN_AMOUNT-__ The amount of chromatin used in the ChIP protocol.
 
-## Chip-Seq
+### Chip-Seq
 
 __EXPERIMENT_TYPE:__ 'Histone H3K4me1','Histone H3K4me3','Histone H3K9me3','Histone H3K9ac','Histone H3K27me3', 'Histone H3K36me3', etc.
 
@@ -338,7 +338,7 @@ __CHIP_PROTOCOL_CROSSLINK_TIME__ - The timespan in which the chromatin is crossl
 
 __LIBRARY_GENERATION_FRAGMENT_SIZE_RANGE__ - The fragment size range of the preparation.
 
-## mRNA-seq
+### mRNA-seq
 
 __EXPERIMENT_TYPE:__ mRNA-Seq
 
@@ -402,7 +402,7 @@ __LIBRARY_GENERATION_FRAGMENT_SIZE_RANGE__ - The fragment size range of the prep
 
 <strong>LIBRARY_GENERATION_5'_ADAPTER_SEQUENCE</strong> - The sequence of the 5' adapter used for library generation.
 
-## total-RNA-seq
+### total-RNA-seq
 
 __EXPERIMENT_TYPE:__ total-RNA-Seq
 
@@ -466,7 +466,7 @@ __LIBRARY_GENERATION_FRAGMENT_SIZE_RANGE__ - The fragment size range of the prep
 
 <strong>LIBRARY_GENERATION_5'_ADAPTER_SEQUENCE</strong> - The sequence of the 5' adapter used for library generation.
 
-## smRNA-Seq
+### smRNA-Seq
 
 __EXPERIMENT_TYPE__ - smRNA-Seq
 
