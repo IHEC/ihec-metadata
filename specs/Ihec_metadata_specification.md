@@ -30,19 +30,23 @@ __Only__ terms from following ontologies are acceptable for annotating the metad
 
 ##### Sample Ontologies
 
-* Cell Lines - Experimental Factor Ontology (EFO)
-
-* Primary Cells - Cell Ontology (CL)
-
-* Primary Tissue - Uberon
+Field __SAMPLE_ONTOLOGY_URI__:
+* Cell Lines: Experimental Factor Ontology (EFO - [https://www.ebi.ac.uk/efo/](https://www.ebi.ac.uk/efo/))
+* Primary Cells: Cell Ontology (CL - [http://cellontology.org](http://cellontology.org))
+* Primary Tissue: Uberon ([http://uberon.org](http://uberon.org))
 
 ##### Disease Ontologies
 
-* Disease - NCI Metathesaurus
+Fields __DISEASE_ONTOLOGY_URI__ and __DONOR_HEALTH_STATUS_ONTOLOGY_URI__:
+* Disease: NCI Metathesaurus ([https://ncim.nci.nih.gov/ncimbrowser/](https://ncim.nci.nih.gov/ncimbrowser/))
 
 ##### Experiment Ontologies
 
-* Assays and Platforms - Ontology for Biomedical Investigations (OBI)
+* Assays and Platforms: Ontology for Biomedical Investigations (OBI - [http://obi-ontology.org/](http://obi-ontology.org/))
+
+Field __MOLECULE_ONTOLOGY_URI__:
+* Sequence Ontology (SO - [http://www.sequenceontology.org/](http://www.sequenceontology.org/)) 
+
 
 # IHEC Extensions 
 
