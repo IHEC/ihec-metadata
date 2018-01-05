@@ -50,9 +50,7 @@ Field __MOLECULE_ONTOLOGY_URI__:
 
 # IHEC Extensions 
 
-## Level 0 Data
-
-### SAMPLES
+## SAMPLES
 
 #### Cell Line
 
@@ -62,9 +60,9 @@ __MOLECULE_ONTOLOGY_URI__ - (Ontology) links to molecule ontology information
 
 __SAMPLE_ONTOLOGY_URI__ - (Ontology) links to sample ontology information.
 
-__DISEASE_ONTOLOGY_URI__ - (Ontology) links to disease ontology information. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute.
+__DISEASE_ONTOLOGY_URI__ - (Ontology) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute. For samples without known disease, use the NCIT ontology term 'None'.
 
-__DISEASE:__ Free form field for more specific disease information
+__DISEASE:__ Free form field for more specific sample disease information. This property reflects the disease for this particular sample, not for the donor health condition.  
 
 __BIOMATERIAL_PROVIDER__ - The name of the company, laboratory or person that provided the biological material.
 
@@ -94,9 +92,9 @@ __MOLECULE_ONTOLOGY_URI__ - (Ontology) links to molecule ontology information
 
 __SAMPLE_ONTOLOGY_URI__ - (Ontology) links to sample ontology information.
 
-__DISEASE_ONTOLOGY_URI__ - (Ontology) links to disease ontology information. If dealing with a rare disease consider identifiability issues. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute.
+__DISEASE_ONTOLOGY_URI__ - (Ontology) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute.
 
-__DISEASE:__ Free form field for more specific disease information. If dealing with a rare disease consider identifiability issues.
+__DISEASE:__ Free form field for more specific sample disease information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues.
 
 __BIOMATERIAL_PROVIDER__ - The name of the company, laboratory or person that provided the biological material.
 
@@ -130,9 +128,9 @@ __MOLECULE_ONTOLOGY_URI__ - (Ontology) links to molecule ontology information
 
 __SAMPLE_ONTOLOGY_URI__ - (Ontology) links to sample ontology information.
 
-__DISEASE_ONTOLOGY_URI__ - (Ontology) links to disease ontology information. If dealing with a rare disease consider identifiability issues. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute.
+__DISEASE_ONTOLOGY_URI__ - (Ontology) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute.
 
-__DISEASE__ - Free form field for more specific disease information. If dealing with a rare disease consider identifiability issues.
+__DISEASE__ - Free form field for more specific sample disease information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues.
 
 __BIOMATERIAL_PROVIDER__ - The name of the company, laboratory or person that provided the biological material.
 
@@ -168,9 +166,9 @@ __MOLECULE_ONTOLOGY_URI__ - (Ontology) links to molecule ontology information
 
 __SAMPLE_ONTOLOGY_URI__ - (Ontology) links to sample ontology information.
 
-__DISEASE_ONTOLOGY_URI__ - (Ontology) links to disease ontology information. If dealing with a rare disease consider identifiability issues.
+__DISEASE_ONTOLOGY_URI__ - (Ontology) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues.
 
-__DISEASE:__ Free form field for more specific disease information. If dealing with a rare disease consider identifiability issues.
+__DISEASE:__ Free form field for more specific sample disease information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues.
 
 __BIOMATERIAL_PROVIDER__ - The name of the company, laboratory or person that provided the biological material.
 
@@ -213,9 +211,9 @@ __LIBRARY_STRATEGY__ - (Controlled Vocabulary) The assay used. These are defined
 
 __EXPERIMENT_TYPE:__ Enter 'Chromatin Accessibility'.
 
-__EXPERIMENT_ONTOLOGY_URI__ - (Ontology) links to experiment ontology information.
+__EXPERIMENT_ONTOLOGY_URI:__ Enter 'http://purl.obolibrary.org/obo/OBI_0001853'.
 
-__LIBRARY_STRATEGY__ - TODO
+__LIBRARY_STRATEGY:__ Enter 'DNase-Hypersensitivity'.
 
 __EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
 
@@ -225,9 +223,9 @@ __DNASE_PROTOCOL__ - The protocol used for DNAse treatment.
 
 __EXPERIMENT_TYPE:__ Enter 'DNA Methylation'.
 
-__EXPERIMENT_ONTOLOGY_URI__ - (Ontology) links to experiment ontology information.
+__EXPERIMENT_ONTOLOGY_URI:__ Enter 'http://purl.obolibrary.org/obo/OBI_0001863'.
 
-__LIBRARY_STRATEGY__ - Enter 'Bisulfite-Seq'.
+__LIBRARY_STRATEGY:__ Enter 'Bisulfite-Seq'.
 
 __EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
 
@@ -269,9 +267,9 @@ __LIBRARY_GENERATION_PCR_PRODUCT_ISOLATION_PROTOCOL__ - The protocol for isolati
 
 __EXPERIMENT_TYPE:__ Enter 'DNA Methylation'.
 
-__EXPERIMENT_ONTOLOGY_URI__ - links to experiment ontology information.
+__EXPERIMENT_ONTOLOGY_URI:__ Enter 'http://purl.obolibrary.org/obo/OBI_0000693'.
 
-__LIBRARY_STRATEGY__ - Enter 'MeDIP-Seq'.
+__LIBRARY_STRATEGY:__ Enter 'MeDIP-Seq'.
 
 __EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
 
@@ -301,9 +299,9 @@ __MeDIP_ANTIBODY_LOT__ - The lot identifier of the antibody.
 
 __EXPERIMENT_TYPE:__ Enter 'DNA Methylation'.
 
-__EXPERIMENT_ONTOLOGY_URI__ - (Ontology) elements that contain links to experiment ontology information.
+__EXPERIMENT_ONTOLOGY_URI:__ Enter 'http://purl.obolibrary.org/obo/OBI_0001861'.
 
-__LIBRARY_STRATEGY__ - Enter 'MRE-Seq'.
+__LIBRARY_STRATEGY:__ - Enter 'MRE-Seq'.
 
 __MRE_PROTOCOL__ - The MRE protocol.
 
@@ -317,9 +315,9 @@ __MRE_PROTOCOL_SIZE_FRACTION__ - The size of the fragments selected in the MRE p
 
 __EXPERIMENT_TYPE:__ Enter 'ChIP-Seq Input'.
 
-__EXPERIMENT_ONTOLOGY_URI__ - (Ontology) elements that contain links to sample ontology information.
+__EXPERIMENT_ONTOLOGY_URI:__ Enter 'http://purl.obolibrary.org/obo/OBI_0002017'.
 
-__LIBRARY_STRATEGY__ - Enter 'ChIP-Seq'.
+__LIBRARY_STRATEGY:__ Enter 'ChIP-Seq'.
 
 __EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
 
@@ -335,9 +333,9 @@ __CHIP_PROTOCOL_CHROMATIN_AMOUNT-__ The amount of chromatin used in the ChIP pro
 
 __EXPERIMENT_TYPE:__ Enter one of ('Histone H3K4me1','Histone H3K4me3','Histone H3K9me3','Histone H3K9ac','Histone H3K27me3', 'Histone H3K36me3', etc.).
 
-__EXPERIMENT_ONTOLOGY_URI__ - (Ontology) links to experiment ontology information.
+__EXPERIMENT_ONTOLOGY_URI:__ Enter 'http://purl.obolibrary.org/obo/OBI_0002017'.
 
-__LIBRARY_STRATEGY__ - Enter 'ChIP-Seq'.
+__LIBRARY_STRATEGY:__ Enter 'ChIP-Seq'.
 
 __EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
 
@@ -371,7 +369,7 @@ __LIBRARY_GENERATION_FRAGMENT_SIZE_RANGE__ - The fragment size range of the prep
 
 __EXPERIMENT_TYPE:__ Enter 'mRNA-Seq'.
 
-__EXPERIMENT_ONTOLOGY_URI__ - (Ontology) links to experiment ontology information.
+__EXPERIMENT_ONTOLOGY_URI:__ Enter 'http://purl.obolibrary.org/obo/OBI_0001271'.
 
 __LIBRARY_STRATEGY__ - Enter 'RNA-Seq'.
 
@@ -437,7 +435,7 @@ __LIBRARY_GENERATION_FRAGMENT_SIZE_RANGE__ - The fragment size range of the prep
 
 __EXPERIMENT_TYPE:__ Enter 'total-RNA-Seq'.
 
-__EXPERIMENT_ONTOLOGY_URI__ - (Ontology) links to experiment ontology information.
+__EXPERIMENT_ONTOLOGY_URI:__ Enter 'http://purl.obolibrary.org/obo/OBI_0001271'.
 
 __LIBRARY_STRATEGY__ - Enter 'RNA-Seq'.
 
@@ -503,7 +501,7 @@ __LIBRARY_GENERATION_FRAGMENT_SIZE_RANGE__ - The fragment size range of the prep
 
 __EXPERIMENT_TYPE__ - Enter 'smRNA-Seq'.
 
-__EXPERIMENT_ONTOLOGY_URI__ - (Ontology) links to experiment ontology information.
+__EXPERIMENT_ONTOLOGY_URI:__ Enter 'http://purl.obolibrary.org/obo/OBI_0001271'.
 
 __LIBRARY_STRATEGY__ - Enter 'RNA-Seq'.
 
