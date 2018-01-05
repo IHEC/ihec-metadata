@@ -196,13 +196,26 @@ __DONOR_SEX__ - (Controlled Vocabulary) "Male", "Female", "Unknown", or “Mixed
 
 __DONOR_ETHNICITY__ - The ethnicity of the donor that provided the primary tissue. NA if not available. If dealing with small/vulnerable populations consider identifiability issues.
 
+
+
 ## __EXPERIMENTS__ 
+
+An experiment is defined by these fields:
+
+__EXPERIMENT_TYPE__ - The assay target (e.g. ‘DNA Methylation’, ‘mRNA-Seq’, ‘smRNA-Seq’, 'Histone H3K4me1')
+
+__EXPERIMENT_ONTOLOGY_URI__ - (Ontology) links to experiment ontology information.
+
+__LIBRARY_STRATEGY__ - (Controlled Vocabulary) The assay used. These are defined within the SRA metadata specifications with a controlled vocabulary (e.g. ‘Bisulfite-Seq’, ‘RNA-Seq’, ‘ChIP-Seq’) For a complete list, see [https://www.ebi.ac.uk/ena/submit/reads-library-strategy](https://www.ebi.ac.uk/ena/submit/reads-library-strategy)
+
 
 ### Chromatin Accessibility
 
-__EXPERIMENT_TYPE:__ Chromatin Accessibility
+__EXPERIMENT_TYPE:__ Enter 'Chromatin Accessibility'.
 
 __EXPERIMENT_ONTOLOGY_URI__ - (Ontology) links to experiment ontology information.
+
+__LIBRARY_STRATEGY__ - TODO
 
 __EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
 
@@ -210,7 +223,11 @@ __DNASE_PROTOCOL__ - The protocol used for DNAse treatment.
 
 ### WGBS (NOTE: this is a new name to be used instead of Bisulfite-Seq )
 
-__EXPERIMENT_TYPE:__ DNA Methylation
+__EXPERIMENT_TYPE:__ Enter 'DNA Methylation'.
+
+__EXPERIMENT_ONTOLOGY_URI__ - (Ontology) links to experiment ontology information.
+
+__LIBRARY_STRATEGY__ - Enter 'Bisulfite-Seq'.
 
 __EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
 
@@ -250,9 +267,11 @@ __LIBRARY_GENERATION_PCR_PRODUCT_ISOLATION_PROTOCOL__ - The protocol for isolati
 
 ### MeDIP-Seq
 
-__EXPERIMENT_TYPE:__ DNA Methylation
+__EXPERIMENT_TYPE:__ Enter 'DNA Methylation'.
 
 __EXPERIMENT_ONTOLOGY_URI__ - links to experiment ontology information.
+
+__LIBRARY_STRATEGY__ - Enter 'MeDIP-Seq'.
 
 __EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
 
@@ -280,9 +299,11 @@ __MeDIP_ANTIBODY_LOT__ - The lot identifier of the antibody.
 
 ### MRE-Seq
 
-__EXPERIMENT_TYPE:__ DNA Methylation
+__EXPERIMENT_TYPE:__ Enter 'DNA Methylation'.
 
 __EXPERIMENT_ONTOLOGY_URI__ - (Ontology) elements that contain links to experiment ontology information.
+
+__LIBRARY_STRATEGY__ - Enter 'MRE-Seq'.
 
 __MRE_PROTOCOL__ - The MRE protocol.
 
@@ -294,9 +315,11 @@ __MRE_PROTOCOL_SIZE_FRACTION__ - The size of the fragments selected in the MRE p
 
 ### Chip-Seq Input
 
-__EXPERIMENT_TYPE:__ ChIP-Seq Input
+__EXPERIMENT_TYPE:__ Enter 'ChIP-Seq Input'.
 
 __EXPERIMENT_ONTOLOGY_URI__ - (Ontology) elements that contain links to sample ontology information.
+
+__LIBRARY_STRATEGY__ - Enter 'ChIP-Seq'.
 
 __EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
 
@@ -310,9 +333,11 @@ __CHIP_PROTOCOL_CHROMATIN_AMOUNT-__ The amount of chromatin used in the ChIP pro
 
 ### Chip-Seq
 
-__EXPERIMENT_TYPE:__ 'Histone H3K4me1','Histone H3K4me3','Histone H3K9me3','Histone H3K9ac','Histone H3K27me3', 'Histone H3K36me3', etc.
+__EXPERIMENT_TYPE:__ Enter one of ('Histone H3K4me1','Histone H3K4me3','Histone H3K9me3','Histone H3K9ac','Histone H3K27me3', 'Histone H3K36me3', etc.).
 
 __EXPERIMENT_ONTOLOGY_URI__ - (Ontology) links to experiment ontology information.
+
+__LIBRARY_STRATEGY__ - Enter 'ChIP-Seq'.
 
 __EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
 
@@ -344,9 +369,11 @@ __LIBRARY_GENERATION_FRAGMENT_SIZE_RANGE__ - The fragment size range of the prep
 
 ### mRNA-seq
 
-__EXPERIMENT_TYPE:__ mRNA-Seq
+__EXPERIMENT_TYPE:__ Enter 'mRNA-Seq'.
 
 __EXPERIMENT_ONTOLOGY_URI__ - (Ontology) links to experiment ontology information.
+
+__LIBRARY_STRATEGY__ - Enter 'RNA-Seq'.
 
 __EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
 
@@ -408,9 +435,11 @@ __LIBRARY_GENERATION_FRAGMENT_SIZE_RANGE__ - The fragment size range of the prep
 
 ### total-RNA-seq
 
-__EXPERIMENT_TYPE:__ total-RNA-Seq
+__EXPERIMENT_TYPE:__ Enter 'total-RNA-Seq'.
 
 __EXPERIMENT_ONTOLOGY_URI__ - (Ontology) links to experiment ontology information.
+
+__LIBRARY_STRATEGY__ - Enter 'RNA-Seq'.
 
 __EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
 
@@ -472,9 +501,11 @@ __LIBRARY_GENERATION_FRAGMENT_SIZE_RANGE__ - The fragment size range of the prep
 
 ### smRNA-Seq
 
-__EXPERIMENT_TYPE__ - smRNA-Seq
+__EXPERIMENT_TYPE__ - Enter 'smRNA-Seq'.
 
 __EXPERIMENT_ONTOLOGY_URI__ - (Ontology) links to experiment ontology information.
+
+__LIBRARY_STRATEGY__ - Enter 'RNA-Seq'.
 
 __EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
 
