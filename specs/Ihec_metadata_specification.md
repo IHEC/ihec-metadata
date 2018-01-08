@@ -2,16 +2,12 @@
 
 The IHEC metadata standards are extension of the standards used by the Roadmap Epigenomics Project. Please refer to Sections 1 and 2 of original specification (archived at https://github.com/IHEC/ihec-metadata/blob/master/specs/original_docs/IHEC-Metadata.pdf )  for the data and metadata model.
 
-This document describes metadata elements extending the SRA XML Schema 1.2
-
-# Metadata Elements Extending SRA XML Schema 1.2
-
-(quoting Section 3 Introuction, https://github.com/IHEC/ihec-metadata/blob/master/specs/original_docs/IHEC-Metadata.pdf  )
-
-The core SRA XML elements are augmented by additional attributes defined for purposes of the NIH Roadmap Epigenomics as described in the official IHEC ecosystem repository. 
+This document describes metadata elements extending the __SRA XML Schema 1.2__. The core SRA XML elements are augmented by additional attributes defined for purposes of the NIH Roadmap Epigenomics as described in the official IHEC ecosystem repository. 
 
 The same attribute may be used multiple times in a single XML record. This may be most useful for supplying URIs to multiple ontologies or for supplying multiple references to a single ontology such as in the case of DISEASE_ONTOLOGY_URI.
+
 For example, describing a brain primary tissue using ontology terms for ('Brodmann (1909) area 8', 'Brodmann (1909) area 9'):
+
 ```
 <SAMPLE_ATTRIBUTE>
     <TAG>SAMPLE_ONTOLOGY_URI</TAG>
@@ -25,9 +21,7 @@ For example, describing a brain primary tissue using ontology terms for ('Brodma
 
 Documentation for the core SRA XML elements is here: [http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=doc](http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=doc)
 
-The SRA XML schema is here: [http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=xml_schemas](http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=xml_schemas)
-
-# IHEC Extensions 
+The SRA XML schemas are here: [http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=xml_schemas](http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=xml_schemas)
 
 Tags with controlled vocabularies are labelled as “Controlled Vocabulary”
 
