@@ -198,9 +198,9 @@ __EXPERIMENT_ONTOLOGY_URI__ - (Ontology: OBI) links to experiment ontology infor
 
 __LIBRARY_STRATEGY__ - (Controlled Vocabulary) The assay used. These are defined within the SRA metadata specifications with a controlled vocabulary (e.g. ‘Bisulfite-Seq’, ‘RNA-Seq’, ‘ChIP-Seq’). For a complete list, see [https://www.ebi.ac.uk/ena/submit/reads-library-strategy](https://www.ebi.ac.uk/ena/submit/reads-library-strategy).
 
-__MOLECULE__ - (Controlled Vocabulary) The type of molecule that was extracted from the biological material. Include one of the following: total RNA, polyA RNA, cytoplasmic RNA, nuclear RNA, genomic DNA, protein, or other.
-
 __MOLECULE_ONTOLOGY_URI__ - (Ontology: SO) links to molecule ontology information.
+
+__MOLECULE__ - (Controlled Vocabulary) The type of molecule that was extracted from the biological material. Include one of the following: total RNA, polyA RNA, cytoplasmic RNA, nuclear RNA, genomic DNA, protein, or other.
 
 
 ## Chromatin Accessibility
