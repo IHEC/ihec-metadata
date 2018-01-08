@@ -33,7 +33,7 @@ __Only__ terms from following ontologies are acceptable for annotating the metad
 Field __SAMPLE_ONTOLOGY_URI__:
 * Cell Lines: Experimental Factor Ontology (EFO - [https://www.ebi.ac.uk/efo/](https://www.ebi.ac.uk/efo/))
 * Primary Cells: Cell Ontology (CL - [http://cellontology.org](http://cellontology.org))
-* Primary Tissue: Uberon ([http://uberon.org](http://uberon.org))
+* Primary Tissue: Uberon (UBERON - [http://uberon.org](http://uberon.org))
 
 ##### Disease Ontologies
 
@@ -53,10 +53,6 @@ Field __MOLECULE_ONTOLOGY_URI__:
 ## SAMPLES
 
 #### Cell Line
-
-__MOLECULE__ - (Controlled Vocabulary) The type of molecule that was extracted from the biological material. Include one of the following: total RNA, polyA RNA, cytoplasmic RNA, nuclear RNA, genomic DNA, protein, or other.
-
-__MOLECULE_ONTOLOGY_URI__ - (Ontology) links to molecule ontology information
 
 __SAMPLE_ONTOLOGY_URI__ - (Ontology) links to sample ontology information.
 
@@ -86,11 +82,11 @@ __BATCH__ - The batch from which the cell line is derived. Primarily applicable 
 
 #### Primary Cell
 
-__MOLECULE__ - (Controlled Vocabulary) The type of molecule that was extracted from the biological material. Include one of the following: total RNA, polyA RNA, cytoplasmic RNA, nuclear RNA, genomic DNA, protein, or other.
-
-__MOLECULE_ONTOLOGY_URI__ - (Ontology) links to molecule ontology information
-
 __SAMPLE_ONTOLOGY_URI__ - (Ontology) links to sample ontology information.
+
+__ORIGIN_SAMPLE__ - Description of the origin tissue from which sample was extracted.
+
+__ORIGIN_SAMPLE_ONTOLOGY_URI__ - (Ontology) links to the tissue from which sample was extracted.
 
 __DISEASE_ONTOLOGY_URI__ - (Ontology) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute.
 
@@ -110,7 +106,7 @@ __DONOR_AGE__ - The age of the donor that provided the primary cell. NA if not a
 
 __DONOR_AGE_UNIT__ - (Controlled Vocabulary) “year”, “month”, “week”, or “day”.
 
-__DONOR_LIFE_STAGE__ - (Controlled Vocabulary) "fetal", "newborn", "child", "adult", "unknown", "embryonic", "postnatal"
+__DONOR_LIFE_STAGE__ - (Controlled Vocabulary, Optional) "fetal", "newborn", "child", "adult", "unknown", "embryonic", "postnatal".
 
 __DONOR_HEALTH_STATUS__ - The health status of the donor that provided the primary cell. NA if not available.
 
@@ -122,11 +118,11 @@ __PASSAGE_IF_EXPANDED__ - If the primary cell has been expanded, the number of t
 
 #### Primary Cell Culture
 
-__MOLECULE__ - (Controlled Vocabulary) The type of molecule that was extracted from the biological material. Include one of the following: total RNA, polyA RNA, cytoplasmic RNA, nuclear RNA, genomic DNA, protein, or other.
-
-__MOLECULE_ONTOLOGY_URI__ - (Ontology) links to molecule ontology information
-
 __SAMPLE_ONTOLOGY_URI__ - (Ontology) links to sample ontology information.
+
+__ORIGIN_SAMPLE__ - Description of the origin tissue from which sample was extracted.
+
+__ORIGIN_SAMPLE_ONTOLOGY_URI__ - (Ontology) links to the tissue from which sample was extracted.
 
 __DISEASE_ONTOLOGY_URI__ - (Ontology) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute.
 
@@ -148,7 +144,7 @@ __DONOR_AGE__ - The age of the donor that provided the primary cell. NA if not a
 
 __DONOR_AGE_UNIT__ - (Controlled Vocabulary) “year”, “month”, “week”, or “day”.
 
-__DONOR_LIFE_STAGE__ - (Controlled Vocabulary) "fetal", "newborn", "child", "adult", "unknown", "embryonic", "postnatal"
+__DONOR_LIFE_STAGE__ - (Controlled Vocabulary, Optional) "fetal", "newborn", "child", "adult", "unknown", "embryonic", "postnatal"
 
 __DONOR_HEALTH_STATUS__ - The health status of the donor that provided the primary cell. NA if not available.
 
@@ -159,10 +155,6 @@ __DONOR_ETHNICITY__ - The ethnicity of the donor that provided the primary cell.
 __PASSAGE_IF_EXPANDED__ - If the primary cell culture has been expanded, the number of times the cell culture has been re-plated and allowed to grow back to confluency or to some maximum density if using suspension cultures. NA if no expansion.
 
 #### Primary Tissue
-
-__MOLECULE__ - (Controlled Vocabulary) The type of molecule that was extracted from the biological material. Include one of the following: total RNA, polyA RNA, cytoplasmic RNA, nuclear RNA, genomic DNA, protein, or other.
-
-__MOLECULE_ONTOLOGY_URI__ - (Ontology) links to molecule ontology information
 
 __SAMPLE_ONTOLOGY_URI__ - (Ontology) links to sample ontology information.
 
@@ -186,7 +178,7 @@ __DONOR_AGE__ - The age of the donor that provided the primary tissue. NA if not
 
 __DONOR_AGE_UNIT__ - (Controlled Vocabulary) “year”, “month”, “week”, or “day”.
 
-__DONOR_LIFE_STAGE__ - (Controlled Vocabulary) "fetal", "newborn", "child", "adult", "unknown", "embryonic", "postnatal"
+__DONOR_LIFE_STAGE__ - (Controlled Vocabulary, Optional) "fetal", "newborn", "child", "adult", "unknown", "embryonic", "postnatal"
 
 __DONOR_HEALTH_STATUS__ - The health status of the donor that provided the primary tissue. NA if not available.
 
@@ -198,13 +190,17 @@ __DONOR_ETHNICITY__ - The ethnicity of the donor that provided the primary tissu
 
 ## __EXPERIMENTS__ 
 
-An experiment is defined by these fields:
+All experiments are defined by these fields:
 
 __EXPERIMENT_TYPE__ - The assay target (e.g. ‘DNA Methylation’, ‘mRNA-Seq’, ‘smRNA-Seq’, 'Histone H3K4me1')
 
 __EXPERIMENT_ONTOLOGY_URI__ - (Ontology) links to experiment ontology information.
 
 __LIBRARY_STRATEGY__ - (Controlled Vocabulary) The assay used. These are defined within the SRA metadata specifications with a controlled vocabulary (e.g. ‘Bisulfite-Seq’, ‘RNA-Seq’, ‘ChIP-Seq’) For a complete list, see [https://www.ebi.ac.uk/ena/submit/reads-library-strategy](https://www.ebi.ac.uk/ena/submit/reads-library-strategy)
+
+__MOLECULE__ - (Controlled Vocabulary) The type of molecule that was extracted from the biological material. Include one of the following: total RNA, polyA RNA, cytoplasmic RNA, nuclear RNA, genomic DNA, protein, or other.
+
+__MOLECULE_ONTOLOGY_URI__ - (Ontology) links to molecule ontology information
 
 
 ### Chromatin Accessibility
