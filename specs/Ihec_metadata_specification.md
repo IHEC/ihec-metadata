@@ -35,7 +35,7 @@ Field __SAMPLE_ONTOLOGY_URI__:
 * Primary Tissue: Uberon (__UBERON__ - [http://uberon.org](http://uberon.org))
 
 Fields __DISEASE_ONTOLOGY_URI__ and __DONOR_HEALTH_STATUS_ONTOLOGY_URI__:
-* NCI Metathesaurus (__NCIT__ - [https://ncim.nci.nih.gov/ncimbrowser/](https://ncim.nci.nih.gov/ncimbrowser/))
+* NCI Metathesaurus (__NCIM__ - [https://ncim.nci.nih.gov/ncimbrowser/](https://ncim.nci.nih.gov/ncimbrowser/))
 
 Field __EXPERIMENT_ONTOLOGY_URI__:
 * Ontology for Biomedical Investigations (__OBI__ - [http://obi-ontology.org/](http://obi-ontology.org/))
@@ -50,7 +50,7 @@ Field __MOLECULE_ONTOLOGY_URI__:
 
 __SAMPLE_ONTOLOGY_URI__ - (Ontology: EFO) links to sample ontology information.
 
-__DISEASE_ONTOLOGY_URI__ - (Ontology: NCIT) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute. For samples without known disease, use the NCIT ontology term 'None'.
+__DISEASE_ONTOLOGY_URI__ - (Ontology: NCIM) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute. For samples without any known disease, use the NCImetathesaurus C0549184 term 'None'.
 
 __DISEASE:__ Free form field for more specific sample disease information. This property reflects the disease for this particular sample, not for the donor health condition.  
 
@@ -82,7 +82,7 @@ __ORIGIN_SAMPLE__ - Description of the origin tissue from which sample was extra
 
 __ORIGIN_SAMPLE_ONTOLOGY_URI__ - (Ontology: UBERON) links to the tissue from which sample was extracted.
 
-__DISEASE_ONTOLOGY_URI__ - (Ontology: NCIT) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute.
+__DISEASE_ONTOLOGY_URI__ - (Ontology: NCIM) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute.
 
 __DISEASE:__ Free form field for more specific sample disease information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues.
 
@@ -102,7 +102,7 @@ __DONOR_AGE_UNIT__ - (Controlled Vocabulary) “year”, “month”, “week”
 
 __DONOR_LIFE_STAGE__ - (Controlled Vocabulary, Optional) "fetal", "newborn", "child", "adult", "unknown", "embryonic", "postnatal".
 
-__DONOR_HEALTH_STATUS_ONTOLOGY_URI__ - (Ontology: NCIT) links to the health status of the donor that provided the primary cell. NA if not available.  "None" if not available.
+__DONOR_HEALTH_STATUS_ONTOLOGY_URI__ - (Ontology: NCIM) links to the health status of the donor that provided the primary cell. NA if not available.  "None" if not available.
 
 __DONOR_HEALTH_STATUS__ - The health status of the donor that provided the primary cell. NA if not available.
 
@@ -120,7 +120,7 @@ __ORIGIN_SAMPLE__ - Description of the origin tissue from which sample was extra
 
 __ORIGIN_SAMPLE_ONTOLOGY_URI__ - (Ontology: UBERON) links to the tissue from which sample was extracted.
 
-__DISEASE_ONTOLOGY_URI__ - (Ontology: NCIT) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute.
+__DISEASE_ONTOLOGY_URI__ - (Ontology: NCIM) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute.
 
 __DISEASE__ - Free form field for more specific sample disease information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues.
 
@@ -142,7 +142,7 @@ __DONOR_AGE_UNIT__ - (Controlled Vocabulary) “year”, “month”, “week”
 
 __DONOR_LIFE_STAGE__ - (Controlled Vocabulary, Optional) "fetal", "newborn", "child", "adult", "unknown", "embryonic", "postnatal"
 
-__DONOR_HEALTH_STATUS_ONTOLOGY_URI__ - (Ontology: NCIT) links to the health status of the donor that provided the primary cell. NA if not available.  "None" if not available.
+__DONOR_HEALTH_STATUS_ONTOLOGY_URI__ - (Ontology: NCIM) links to the health status of the donor that provided the primary cell. NA if not available.  "None" if not available.
 
 __DONOR_HEALTH_STATUS__ - The health status of the donor that provided the primary cell. NA if not available.
 
@@ -156,7 +156,7 @@ __PASSAGE_IF_EXPANDED__ - If the primary cell culture has been expanded, the num
 
 __SAMPLE_ONTOLOGY_URI__ - (Ontology: UBERON) links to sample ontology information.
 
-__DISEASE_ONTOLOGY_URI__ - (Ontology: NCIT) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues.
+__DISEASE_ONTOLOGY_URI__ - (Ontology: NCIM) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues.
 
 __DISEASE:__ Free form field for more specific sample disease information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues.
 
@@ -178,7 +178,7 @@ __DONOR_AGE_UNIT__ - (Controlled Vocabulary) “year”, “month”, “week”
 
 __DONOR_LIFE_STAGE__ - (Controlled Vocabulary, Optional) "fetal", "newborn", "child", "adult", "unknown", "embryonic", "postnatal"
 
-__DONOR_HEALTH_STATUS_ONTOLOGY_URI__ - (Ontology: NCIT) links to the health status of the donor that provided the primary tissue. "None" if not available.
+__DONOR_HEALTH_STATUS_ONTOLOGY_URI__ - (Ontology: NCIM) links to the health status of the donor that provided the primary tissue. "None" if not available.
 
 __DONOR_HEALTH_STATUS__ - The health status of the donor that provided the primary tissue. NA if not available.
 
