@@ -4,9 +4,7 @@ The IHEC metadata standards are extension of the standards used by the Roadmap E
 
 This document describes metadata elements extending the __SRA XML Schema 1.2__. The core SRA XML elements are augmented by additional attributes defined for purposes of the NIH Roadmap Epigenomics as described in the official IHEC ecosystem repository. 
 
-The same attribute may be used multiple times in a single XML record. This may be most useful for supplying URIs to multiple ontologies or for supplying multiple references to a single ontology such as in the case of DISEASE_ONTOLOGY_URI.
-
-For example, describing a brain primary tissue using ontology terms for ('Brodmann (1909) area 8', 'Brodmann (1909) area 9'):
+The same attribute may be used multiple times in a single XML record. This may be most useful for supplying URIs to multiple ontologies or for supplying multiple references to a single ontology such as in the case of DISEASE_ONTOLOGY_URI. For example, describing a brain primary tissue using ontology terms for ('Brodmann (1909) area 8', 'Brodmann (1909) area 9'):
 
 ```
 <SAMPLE_ATTRIBUTE>
