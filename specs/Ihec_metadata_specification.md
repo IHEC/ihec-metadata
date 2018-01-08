@@ -102,7 +102,7 @@ __DONOR_AGE_UNIT__ - (Controlled Vocabulary) “year”, “month”, “week”
 
 __DONOR_LIFE_STAGE__ - (Controlled Vocabulary, Optional) "fetal", "newborn", "child", "adult", "unknown", "embryonic", "postnatal".
 
-__DONOR_HEALTH_STATUS_ONTOLOGY_URI__ - (Ontology: NCIM) links to the health status of the donor that provided the primary cell. NA if not available.  "None" if not available.
+__DONOR_HEALTH_STATUS_ONTOLOGY_URI__ - (Ontology: NCIM) links to the health status of the donor that provided the primary cell. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute. For samples without any known disease, use the NCImetathesaurus C0549184 term 'None'. If dealing with a rare disease consider identifiability issues.
 
 __DONOR_HEALTH_STATUS__ - The health status of the donor that provided the primary cell. NA if not available.
 
@@ -142,7 +142,7 @@ __DONOR_AGE_UNIT__ - (Controlled Vocabulary) “year”, “month”, “week”
 
 __DONOR_LIFE_STAGE__ - (Controlled Vocabulary, Optional) "fetal", "newborn", "child", "adult", "unknown", "embryonic", "postnatal"
 
-__DONOR_HEALTH_STATUS_ONTOLOGY_URI__ - (Ontology: NCIM) links to the health status of the donor that provided the primary cell. NA if not available.  "None" if not available.
+__DONOR_HEALTH_STATUS_ONTOLOGY_URI__ - (Ontology: NCIM) links to the health status of the donor that provided the primary cell. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute. For samples without any known disease, use the NCImetathesaurus C0549184 term 'None'. If dealing with a rare disease consider identifiability issues.
 
 __DONOR_HEALTH_STATUS__ - The health status of the donor that provided the primary cell. NA if not available.
 
@@ -178,7 +178,7 @@ __DONOR_AGE_UNIT__ - (Controlled Vocabulary) “year”, “month”, “week”
 
 __DONOR_LIFE_STAGE__ - (Controlled Vocabulary, Optional) "fetal", "newborn", "child", "adult", "unknown", "embryonic", "postnatal"
 
-__DONOR_HEALTH_STATUS_ONTOLOGY_URI__ - (Ontology: NCIM) links to the health status of the donor that provided the primary tissue. "None" if not available.
+__DONOR_HEALTH_STATUS_ONTOLOGY_URI__ - (Ontology: NCIM) links to the health status of the donor that provided the primary tissue. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute. For samples without any known disease, use the NCImetathesaurus C0549184 term 'None'. If dealing with a rare disease consider identifiability issues.
 
 __DONOR_HEALTH_STATUS__ - The health status of the donor that provided the primary tissue. NA if not available.
 
@@ -190,17 +190,17 @@ __DONOR_ETHNICITY__ - The ethnicity of the donor that provided the primary tissu
 
 # EXPERIMENTS 
 
-All experiments are defined by these fields:
+All experiments types include these fields:
 
-__EXPERIMENT_TYPE__ - The assay target (e.g. ‘DNA Methylation’, ‘mRNA-Seq’, ‘smRNA-Seq’, 'Histone H3K4me1')
+__EXPERIMENT_TYPE__ - The assay target (e.g. ‘DNA Methylation’, ‘mRNA-Seq’, ‘smRNA-Seq’, 'Histone H3K4me1').
 
 __EXPERIMENT_ONTOLOGY_URI__ - (Ontology: OBI) links to experiment ontology information.
 
-__LIBRARY_STRATEGY__ - (Controlled Vocabulary) The assay used. These are defined within the SRA metadata specifications with a controlled vocabulary (e.g. ‘Bisulfite-Seq’, ‘RNA-Seq’, ‘ChIP-Seq’) For a complete list, see [https://www.ebi.ac.uk/ena/submit/reads-library-strategy](https://www.ebi.ac.uk/ena/submit/reads-library-strategy)
+__LIBRARY_STRATEGY__ - (Controlled Vocabulary) The assay used. These are defined within the SRA metadata specifications with a controlled vocabulary (e.g. ‘Bisulfite-Seq’, ‘RNA-Seq’, ‘ChIP-Seq’). For a complete list, see [https://www.ebi.ac.uk/ena/submit/reads-library-strategy](https://www.ebi.ac.uk/ena/submit/reads-library-strategy).
 
 __MOLECULE__ - (Controlled Vocabulary) The type of molecule that was extracted from the biological material. Include one of the following: total RNA, polyA RNA, cytoplasmic RNA, nuclear RNA, genomic DNA, protein, or other.
 
-__MOLECULE_ONTOLOGY_URI__ - (Ontology: SO) links to molecule ontology information
+__MOLECULE_ONTOLOGY_URI__ - (Ontology: SO) links to molecule ontology information.
 
 
 ## Chromatin Accessibility
