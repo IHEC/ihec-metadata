@@ -21,9 +21,9 @@ Documentation for the core SRA XML elements is here: [http://www.ncbi.nlm.nih.go
 
 The SRA XML schemas are here: [http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=xml_schemas](http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=xml_schemas)
 
-Tags with controlled vocabularies are labelled as “Controlled Vocabulary”
+Tags with controlled vocabularies are labelled as “Controlled Vocabulary”.
 
-Tags with ontolgies are labelled as “Ontology”
+Tags with ontolgies are labelled as “Ontology”.
 
 ## Ontologies
 
@@ -35,10 +35,10 @@ Field __SAMPLE_ONTOLOGY_URI__:
 * Primary Tissue: Uberon (__UBERON__ - [http://uberon.org](http://uberon.org))
 
 Fields __DISEASE_ONTOLOGY_URI__ and __DONOR_HEALTH_STATUS_ONTOLOGY_URI__:
-* Disease: NCI Metathesaurus (__NCIT__ - [https://ncim.nci.nih.gov/ncimbrowser/](https://ncim.nci.nih.gov/ncimbrowser/))
+* NCI Metathesaurus (__NCIT__ - [https://ncim.nci.nih.gov/ncimbrowser/](https://ncim.nci.nih.gov/ncimbrowser/))
 
 Field __EXPERIMENT_ONTOLOGY_URI__:
-* Assays and Platforms: Ontology for Biomedical Investigations (__OBI__ - [http://obi-ontology.org/](http://obi-ontology.org/))
+* Ontology for Biomedical Investigations (__OBI__ - [http://obi-ontology.org/](http://obi-ontology.org/))
 
 Field __MOLECULE_ONTOLOGY_URI__:
 * Sequence Ontology (__SO__ - [http://www.sequenceontology.org/](http://www.sequenceontology.org/)) 
