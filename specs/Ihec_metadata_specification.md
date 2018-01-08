@@ -11,39 +11,41 @@ This document describes metadata elements extending the SRA XML Schema 1.2
 The core SRA XML elements are augmented by additional attributes defined for purposes of the NIH Roadmap Epigenomics as described in the official IHEC ecosystem repository. 
 
 The same attribute may be used multiple times in a single XML record. This may be most useful for supplying URIs to multiple ontologies or for supplying multiple references to a single ontology such as in the case of DISEASE_ONTOLOGY_URI.
+For example, describing a brain primary tissue using ontology terms for ('Brodmann (1909) area 8', 'Brodmann (1909) area 9'):
+```
+<SAMPLE_ATTRIBUTE>
+    <TAG>SAMPLE_ONTOLOGY_URI</TAG>
+    <VALUE>http://purl.obolibrary.org/obo/UBERON_0013539</VALUE>
+</SAMPLE_ATTRIBUTE>
+<SAMPLE_ATTRIBUTE>
+    <TAG>SAMPLE_ONTOLOGY_URI</TAG>
+    <VALUE>http://purl.obolibrary.org/obo/UBERON_0013540</VALUE>
+</SAMPLE_ATTRIBUTE>
+```
 
-Documentation for the core SRA XML elements is here:
+Documentation for the core SRA XML elements is here: [http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=doc](http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=doc)
 
-http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=doc
+The SRA XML schema is here: [http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=xml_schemas](http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=xml_schemas)
 
-The SRA XML schema http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=docas are here:
-
-* http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=xml_schemas
+# IHEC Extensions 
 
 Tags with controlled vocabularies are labelled as “Controlled Vocabulary”
 
 Tags with ontolgies are labelled as “Ontology”
 
-# IHEC Extensions 
-
 ## Ontologies
 
 __Only__ terms from following ontologies are acceptable for annotating the metadata:
-
-##### Sample Ontologies
 
 Field __SAMPLE_ONTOLOGY_URI__:
 * Cell Lines: Experimental Factor Ontology (__EFO__ - [https://www.ebi.ac.uk/efo/](https://www.ebi.ac.uk/efo/))
 * Primary Cells: Cell Ontology (__CL__ - [http://cellontology.org](http://cellontology.org))
 * Primary Tissue: Uberon (__UBERON__ - [http://uberon.org](http://uberon.org))
 
-##### Disease Ontologies
-
 Fields __DISEASE_ONTOLOGY_URI__ and __DONOR_HEALTH_STATUS_ONTOLOGY_URI__:
 * Disease: NCI Metathesaurus (__NCIT__ - [https://ncim.nci.nih.gov/ncimbrowser/](https://ncim.nci.nih.gov/ncimbrowser/))
 
-##### Experiment Ontologies
-
+Field __EXPERIMENT_ONTOLOGY_URI__:
 * Assays and Platforms: Ontology for Biomedical Investigations (__OBI__ - [http://obi-ontology.org/](http://obi-ontology.org/))
 
 Field __MOLECULE_ONTOLOGY_URI__:
