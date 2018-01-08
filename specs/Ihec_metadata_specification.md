@@ -82,7 +82,7 @@ __ORIGIN_SAMPLE__ - Description of the origin tissue from which sample was extra
 
 __ORIGIN_SAMPLE_ONTOLOGY_URI__ - (Ontology: UBERON) links to the tissue from which sample was extracted.
 
-__DISEASE_ONTOLOGY_URI__ - (Ontology: NCIM) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute.
+__DISEASE_ONTOLOGY_URI__ - (Ontology: NCIM) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute. For samples without any known disease, use the NCImetathesaurus C0549184 term 'None'. If dealing with a rare disease consider identifiability issues.
 
 __DISEASE:__ Free form field for more specific sample disease information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues.
 
@@ -120,7 +120,7 @@ __ORIGIN_SAMPLE__ - Description of the origin tissue from which sample was extra
 
 __ORIGIN_SAMPLE_ONTOLOGY_URI__ - (Ontology: UBERON) links to the tissue from which sample was extracted.
 
-__DISEASE_ONTOLOGY_URI__ - (Ontology: NCIM) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute.
+__DISEASE_ONTOLOGY_URI__ - (Ontology: NCIM) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute. For samples without any known disease, use the NCImetathesaurus C0549184 term 'None'. If dealing with a rare disease consider identifiability issues.
 
 __DISEASE__ - Free form field for more specific sample disease information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues.
 
@@ -156,7 +156,7 @@ __PASSAGE_IF_EXPANDED__ - If the primary cell culture has been expanded, the num
 
 __SAMPLE_ONTOLOGY_URI__ - (Ontology: UBERON) links to sample ontology information.
 
-__DISEASE_ONTOLOGY_URI__ - (Ontology: NCIM) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues.
+__DISEASE_ONTOLOGY_URI__ - (Ontology: NCIM) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute. For samples without any known disease, use the NCImetathesaurus C0549184 term 'None'. If dealing with a rare disease consider identifiability issues.
 
 __DISEASE:__ Free form field for more specific sample disease information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues.
 
