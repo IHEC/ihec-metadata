@@ -1,3 +1,5 @@
+IHEC Metadata Specification (Version 1.1)
+
 # Preamble
 
 The IHEC metadata standards are extension of the standards used by the Roadmap Epigenomics Project. Please refer to Sections 1 and 2 of original specification (archived at https://github.com/IHEC/ihec-metadata/blob/master/specs/original_docs/IHEC-Metadata.pdf )  for the data and metadata model.
@@ -108,6 +110,8 @@ __DONOR_AGE_UNIT__ - (Controlled Vocabulary) “year”, “month”, “week”
 
 __DONOR_LIFE_STAGE__ - (Controlled Vocabulary, Optional) "fetal", "newborn", "child", "adult", "unknown", "embryonic", "postnatal".
 
+__DONOR_HEALTH_STATUS_ONTOLOGY_URI__ - (Ontology: NCIT) links to the health status of the donor that provided the primary cell. NA if not available.  "None" if not available.
+
 __DONOR_HEALTH_STATUS__ - The health status of the donor that provided the primary cell. NA if not available.
 
 __DONOR_SEX__ - (Controlled Vocabulary) "Male", "Female", "Unknown", or “Mixed” for pooled samples.
@@ -146,6 +150,8 @@ __DONOR_AGE_UNIT__ - (Controlled Vocabulary) “year”, “month”, “week”
 
 __DONOR_LIFE_STAGE__ - (Controlled Vocabulary, Optional) "fetal", "newborn", "child", "adult", "unknown", "embryonic", "postnatal"
 
+__DONOR_HEALTH_STATUS_ONTOLOGY_URI__ - (Ontology: NCIT) links to the health status of the donor that provided the primary cell. NA if not available.  "None" if not available.
+
 __DONOR_HEALTH_STATUS__ - The health status of the donor that provided the primary cell. NA if not available.
 
 __DONOR_SEX__ - (Controlled Vocabulary) "Male", "Female", "Unknown", or “Mixed” for pooled samples.
@@ -179,6 +185,8 @@ __DONOR_AGE__ - The age of the donor that provided the primary tissue. NA if not
 __DONOR_AGE_UNIT__ - (Controlled Vocabulary) “year”, “month”, “week”, or “day”.
 
 __DONOR_LIFE_STAGE__ - (Controlled Vocabulary, Optional) "fetal", "newborn", "child", "adult", "unknown", "embryonic", "postnatal"
+
+__DONOR_HEALTH_STATUS_ONTOLOGY_URI__ - (Ontology: NCIT) links to the health status of the donor that provided the primary tissue. "None" if not available.
 
 __DONOR_HEALTH_STATUS__ - The health status of the donor that provided the primary tissue. NA if not available.
 
