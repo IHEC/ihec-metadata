@@ -46,9 +46,9 @@ Field __MOLECULE_ONTOLOGY_URI__:
 * Sequence Ontology (__SO__ - [http://www.sequenceontology.org/](http://www.sequenceontology.org/)) 
 
 
-## SAMPLES
+# SAMPLES
 
-#### Cell Line
+## Cell Line
 
 __SAMPLE_ONTOLOGY_URI__ - (Ontology: EFO) links to sample ontology information.
 
@@ -76,7 +76,7 @@ __SEX:__ "Male", "Female", "Unknown", or “Mixed” for pooled samples.
 
 __BATCH__ - The batch from which the cell line is derived. Primarily applicable to initial H1 cell line batches. NA if not applicable.
 
-#### Primary Cell
+## Primary Cell
 
 __SAMPLE_ONTOLOGY_URI__ - (Ontology: CL) links to sample ontology information.
 
@@ -114,7 +114,7 @@ __DONOR_ETHNICITY__ - The ethnicity of the donor that provided the primary cell.
 
 __PASSAGE_IF_EXPANDED__ - If the primary cell has been expanded, the number of times the primary cell has been re-plated and allowed to grow back to confluency or to some maximum density if using suspension cultures. NA if no expansion.
 
-#### Primary Cell Culture
+## Primary Cell Culture
 
 __SAMPLE_ONTOLOGY_URI__ - (Ontology: CL) links to sample ontology information.
 
@@ -154,7 +154,7 @@ __DONOR_ETHNICITY__ - The ethnicity of the donor that provided the primary cell.
 
 __PASSAGE_IF_EXPANDED__ - If the primary cell culture has been expanded, the number of times the cell culture has been re-plated and allowed to grow back to confluency or to some maximum density if using suspension cultures. NA if no expansion.
 
-#### Primary Tissue
+## Primary Tissue
 
 __SAMPLE_ONTOLOGY_URI__ - (Ontology: UBERON) links to sample ontology information.
 
@@ -190,7 +190,7 @@ __DONOR_ETHNICITY__ - The ethnicity of the donor that provided the primary tissu
 
 
 
-## __EXPERIMENTS__ 
+# EXPERIMENTS 
 
 All experiments are defined by these fields:
 
@@ -205,7 +205,7 @@ __MOLECULE__ - (Controlled Vocabulary) The type of molecule that was extracted f
 __MOLECULE_ONTOLOGY_URI__ - (Ontology: SO) links to molecule ontology information
 
 
-### Chromatin Accessibility
+## Chromatin Accessibility
 
 __EXPERIMENT_TYPE:__ Enter 'Chromatin Accessibility'.
 
@@ -217,7 +217,7 @@ __EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
 
 __DNASE_PROTOCOL__ - The protocol used for DNAse treatment.
 
-### WGBS (NOTE: this is a new name to be used instead of Bisulfite-Seq )
+## WGBS (NOTE: this is a new name to be used instead of Bisulfite-Seq )
 
 __EXPERIMENT_TYPE:__ Enter 'DNA Methylation'.
 
@@ -261,7 +261,7 @@ __LIBRARY_GENERATION_PCR_PRIMER_CONC__ - The concentration of the PCR primers us
 
 __LIBRARY_GENERATION_PCR_PRODUCT_ISOLATION_PROTOCOL__ - The protocol for isolating PCR products used for library generation.
 
-### MeDIP-Seq
+## MeDIP-Seq
 
 __EXPERIMENT_TYPE:__ Enter 'DNA Methylation'.
 
@@ -293,7 +293,7 @@ __MeDIP_ANTIBODY_CATALOG__ - The catalog from which the antibody was purchased.
 
 __MeDIP_ANTIBODY_LOT__ - The lot identifier of the antibody.
 
-### MRE-Seq
+## MRE-Seq
 
 __EXPERIMENT_TYPE:__ Enter 'DNA Methylation'.
 
@@ -309,7 +309,7 @@ __MRE_PROTOCOL_RESTRICTION_ENZYME__ - The restriction enzyme(s) used in the MRE 
 
 __MRE_PROTOCOL_SIZE_FRACTION__ - The size of the fragments selected in the MRE protocol.
 
-### Chip-Seq Input
+## Chip-Seq Input
 
 __EXPERIMENT_TYPE:__ Enter 'ChIP-Seq Input'.
 
@@ -327,7 +327,7 @@ __CHIP_PROTOCOL:__ Input
 
 __CHIP_PROTOCOL_CHROMATIN_AMOUNT-__ The amount of chromatin used in the ChIP protocol.
 
-### Chip-Seq
+## Chip-Seq
 
 __EXPERIMENT_TYPE:__ Enter one of ('Histone H3K4me1','Histone H3K4me3','Histone H3K9me3','Histone H3K9ac','Histone H3K27me3', 'Histone H3K36me3', etc.).
 
@@ -363,7 +363,7 @@ __CHIP_PROTOCOL_CROSSLINK_TIME__ - The timespan in which the chromatin is crossl
 
 __LIBRARY_GENERATION_FRAGMENT_SIZE_RANGE__ - The fragment size range of the preparation.
 
-### mRNA-seq
+## mRNA-seq
 
 __EXPERIMENT_TYPE:__ Enter 'mRNA-Seq'.
 
@@ -429,7 +429,7 @@ __LIBRARY_GENERATION_FRAGMENT_SIZE_RANGE__ - The fragment size range of the prep
 
 <strong>LIBRARY_GENERATION_5'_ADAPTER_SEQUENCE</strong> - The sequence of the 5' adapter used for library generation.
 
-### total-RNA-seq
+## total-RNA-seq
 
 __EXPERIMENT_TYPE:__ Enter 'total-RNA-Seq'.
 
@@ -495,7 +495,7 @@ __LIBRARY_GENERATION_FRAGMENT_SIZE_RANGE__ - The fragment size range of the prep
 
 <strong>LIBRARY_GENERATION_5'_ADAPTER_SEQUENCE</strong> - The sequence of the 5' adapter used for library generation.
 
-### smRNA-Seq
+## smRNA-Seq
 
 __EXPERIMENT_TYPE__ - Enter 'smRNA-Seq'.
 
