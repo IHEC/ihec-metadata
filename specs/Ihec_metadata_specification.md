@@ -31,21 +31,21 @@ __Only__ terms from following ontologies are acceptable for annotating the metad
 ##### Sample Ontologies
 
 Field __SAMPLE_ONTOLOGY_URI__:
-* Cell Lines: Experimental Factor Ontology (EFO - [https://www.ebi.ac.uk/efo/](https://www.ebi.ac.uk/efo/))
-* Primary Cells: Cell Ontology (CL - [http://cellontology.org](http://cellontology.org))
-* Primary Tissue: Uberon (UBERON - [http://uberon.org](http://uberon.org))
+* Cell Lines: Experimental Factor Ontology (__EFO__ - [https://www.ebi.ac.uk/efo/](https://www.ebi.ac.uk/efo/))
+* Primary Cells: Cell Ontology (__CL__ - [http://cellontology.org](http://cellontology.org))
+* Primary Tissue: Uberon (__UBERON__ - [http://uberon.org](http://uberon.org))
 
 ##### Disease Ontologies
 
 Fields __DISEASE_ONTOLOGY_URI__ and __DONOR_HEALTH_STATUS_ONTOLOGY_URI__:
-* Disease: NCI Metathesaurus ([https://ncim.nci.nih.gov/ncimbrowser/](https://ncim.nci.nih.gov/ncimbrowser/))
+* Disease: NCI Metathesaurus (__NCIT__ - [https://ncim.nci.nih.gov/ncimbrowser/](https://ncim.nci.nih.gov/ncimbrowser/))
 
 ##### Experiment Ontologies
 
-* Assays and Platforms: Ontology for Biomedical Investigations (OBI - [http://obi-ontology.org/](http://obi-ontology.org/))
+* Assays and Platforms: Ontology for Biomedical Investigations (__OBI__ - [http://obi-ontology.org/](http://obi-ontology.org/))
 
 Field __MOLECULE_ONTOLOGY_URI__:
-* Sequence Ontology (SO - [http://www.sequenceontology.org/](http://www.sequenceontology.org/)) 
+* Sequence Ontology (__SO__ - [http://www.sequenceontology.org/](http://www.sequenceontology.org/)) 
 
 
 # IHEC Extensions 
@@ -54,9 +54,9 @@ Field __MOLECULE_ONTOLOGY_URI__:
 
 #### Cell Line
 
-__SAMPLE_ONTOLOGY_URI__ - (Ontology) links to sample ontology information.
+__SAMPLE_ONTOLOGY_URI__ - (Ontology: EFO) links to sample ontology information.
 
-__DISEASE_ONTOLOGY_URI__ - (Ontology) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute. For samples without known disease, use the NCIT ontology term 'None'.
+__DISEASE_ONTOLOGY_URI__ - (Ontology: NCIT) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute. For samples without known disease, use the NCIT ontology term 'None'.
 
 __DISEASE:__ Free form field for more specific sample disease information. This property reflects the disease for this particular sample, not for the donor health condition.  
 
@@ -82,13 +82,13 @@ __BATCH__ - The batch from which the cell line is derived. Primarily applicable 
 
 #### Primary Cell
 
-__SAMPLE_ONTOLOGY_URI__ - (Ontology) links to sample ontology information.
+__SAMPLE_ONTOLOGY_URI__ - (Ontology: CL) links to sample ontology information.
 
 __ORIGIN_SAMPLE__ - Description of the origin tissue from which sample was extracted.
 
-__ORIGIN_SAMPLE_ONTOLOGY_URI__ - (Ontology) links to the tissue from which sample was extracted.
+__ORIGIN_SAMPLE_ONTOLOGY_URI__ - (Ontology: UBERON) links to the tissue from which sample was extracted.
 
-__DISEASE_ONTOLOGY_URI__ - (Ontology) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute.
+__DISEASE_ONTOLOGY_URI__ - (Ontology: NCIT) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute.
 
 __DISEASE:__ Free form field for more specific sample disease information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues.
 
@@ -118,13 +118,13 @@ __PASSAGE_IF_EXPANDED__ - If the primary cell has been expanded, the number of t
 
 #### Primary Cell Culture
 
-__SAMPLE_ONTOLOGY_URI__ - (Ontology) links to sample ontology information.
+__SAMPLE_ONTOLOGY_URI__ - (Ontology: CL) links to sample ontology information.
 
 __ORIGIN_SAMPLE__ - Description of the origin tissue from which sample was extracted.
 
-__ORIGIN_SAMPLE_ONTOLOGY_URI__ - (Ontology) links to the tissue from which sample was extracted.
+__ORIGIN_SAMPLE_ONTOLOGY_URI__ - (Ontology: UBERON) links to the tissue from which sample was extracted.
 
-__DISEASE_ONTOLOGY_URI__ - (Ontology) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute.
+__DISEASE_ONTOLOGY_URI__ - (Ontology: NCIT) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute.
 
 __DISEASE__ - Free form field for more specific sample disease information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues.
 
@@ -156,9 +156,9 @@ __PASSAGE_IF_EXPANDED__ - If the primary cell culture has been expanded, the num
 
 #### Primary Tissue
 
-__SAMPLE_ONTOLOGY_URI__ - (Ontology) links to sample ontology information.
+__SAMPLE_ONTOLOGY_URI__ - (Ontology: UBERON) links to sample ontology information.
 
-__DISEASE_ONTOLOGY_URI__ - (Ontology) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues.
+__DISEASE_ONTOLOGY_URI__ - (Ontology: NCIT) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues.
 
 __DISEASE:__ Free form field for more specific sample disease information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues.
 
@@ -194,13 +194,13 @@ All experiments are defined by these fields:
 
 __EXPERIMENT_TYPE__ - The assay target (e.g. ‘DNA Methylation’, ‘mRNA-Seq’, ‘smRNA-Seq’, 'Histone H3K4me1')
 
-__EXPERIMENT_ONTOLOGY_URI__ - (Ontology) links to experiment ontology information.
+__EXPERIMENT_ONTOLOGY_URI__ - (Ontology: OBI) links to experiment ontology information.
 
 __LIBRARY_STRATEGY__ - (Controlled Vocabulary) The assay used. These are defined within the SRA metadata specifications with a controlled vocabulary (e.g. ‘Bisulfite-Seq’, ‘RNA-Seq’, ‘ChIP-Seq’) For a complete list, see [https://www.ebi.ac.uk/ena/submit/reads-library-strategy](https://www.ebi.ac.uk/ena/submit/reads-library-strategy)
 
 __MOLECULE__ - (Controlled Vocabulary) The type of molecule that was extracted from the biological material. Include one of the following: total RNA, polyA RNA, cytoplasmic RNA, nuclear RNA, genomic DNA, protein, or other.
 
-__MOLECULE_ONTOLOGY_URI__ - (Ontology) links to molecule ontology information
+__MOLECULE_ONTOLOGY_URI__ - (Ontology: SO) links to molecule ontology information
 
 
 ### Chromatin Accessibility
