@@ -1,6 +1,4 @@
-IHEC Metadata Specification (Version 1.1)
-
-# Preamble
+# IHEC Metadata Specification (Version 1.1)
 
 The IHEC metadata standards are extension of the standards used by the Roadmap Epigenomics Project. Please refer to Sections 1 and 2 of original specification (archived at https://github.com/IHEC/ihec-metadata/blob/master/specs/original_docs/IHEC-Metadata.pdf )  for the data and metadata model.
 
@@ -26,6 +24,8 @@ Tags with controlled vocabularies are labelled as “Controlled Vocabulary”
 
 Tags with ontolgies are labelled as “Ontology”
 
+# IHEC Extensions 
+
 ## Ontologies
 
 __Only__ terms from following ontologies are acceptable for annotating the metadata:
@@ -49,8 +49,6 @@ Fields __DISEASE_ONTOLOGY_URI__ and __DONOR_HEALTH_STATUS_ONTOLOGY_URI__:
 Field __MOLECULE_ONTOLOGY_URI__:
 * Sequence Ontology (__SO__ - [http://www.sequenceontology.org/](http://www.sequenceontology.org/)) 
 
-
-# IHEC Extensions 
 
 ## SAMPLES
 
