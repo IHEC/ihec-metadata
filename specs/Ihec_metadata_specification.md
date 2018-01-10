@@ -86,9 +86,9 @@ __BIOMATERIAL_PROVIDER__ - The name of the company, laboratory or person that pr
 
 __BIOMATERIAL_TYPE:__ Primary Cell
 
-__ORIGIN_SAMPLE__ - Description of the origin tissue from which sample was extracted.
-
 __ORIGIN_SAMPLE_ONTOLOGY_URI__ - (Ontology: UBERON) links to the tissue from which sample was extracted.
+
+__ORIGIN_SAMPLE__ - Description of the origin tissue from which sample was extracted.
 
 __CELL_TYPE__ - The type of cell.
 
@@ -124,9 +124,9 @@ __BIOMATERIAL_PROVIDER__ - The name of the company, laboratory or person that pr
 
 __BIOMATERIAL_TYPE__ - Primary Cell Culture
 
-__ORIGIN_SAMPLE__ - Description of the origin tissue from which sample was extracted.
-
 __ORIGIN_SAMPLE_ONTOLOGY_URI__ - (Ontology: UBERON) links to the tissue from which sample was extracted.
+
+__ORIGIN_SAMPLE__ - Description of the origin tissue from which sample was extracted.
 
 __CELL_TYPE__ - The type of cell.
 
