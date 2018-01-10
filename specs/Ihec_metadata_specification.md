@@ -78,10 +78,6 @@ __BATCH__ - The batch from which the cell line is derived. Primarily applicable 
 
 __SAMPLE_ONTOLOGY_URI__ - (Ontology: CL) links to sample ontology information.
 
-__ORIGIN_SAMPLE__ - Description of the origin tissue from which sample was extracted.
-
-__ORIGIN_SAMPLE_ONTOLOGY_URI__ - (Ontology: UBERON) links to the tissue from which sample was extracted.
-
 __DISEASE_ONTOLOGY_URI__ - (Ontology: NCIM) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute. For samples without any known disease, use the NCImetathesaurus C0549184 term "None". If dealing with a rare disease consider identifiability issues.
 
 __DISEASE:__ Free form field for more specific sample disease information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues.
@@ -89,6 +85,10 @@ __DISEASE:__ Free form field for more specific sample disease information. This 
 __BIOMATERIAL_PROVIDER__ - The name of the company, laboratory or person that provided the biological material.
 
 __BIOMATERIAL_TYPE:__ Primary Cell
+
+__ORIGIN_SAMPLE__ - Description of the origin tissue from which sample was extracted.
+
+__ORIGIN_SAMPLE_ONTOLOGY_URI__ - (Ontology: UBERON) links to the tissue from which sample was extracted.
 
 __CELL_TYPE__ - The type of cell.
 
@@ -116,10 +116,6 @@ __PASSAGE_IF_EXPANDED__ - If the primary cell has been expanded, the number of t
 
 __SAMPLE_ONTOLOGY_URI__ - (Ontology: CL) links to sample ontology information.
 
-__ORIGIN_SAMPLE__ - Description of the origin tissue from which sample was extracted.
-
-__ORIGIN_SAMPLE_ONTOLOGY_URI__ - (Ontology: UBERON) links to the tissue from which sample was extracted.
-
 __DISEASE_ONTOLOGY_URI__ - (Ontology: NCIM) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute. For samples without any known disease, use the NCImetathesaurus C0549184 term "None". If dealing with a rare disease consider identifiability issues.
 
 __DISEASE__ - Free form field for more specific sample disease information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues.
@@ -127,6 +123,10 @@ __DISEASE__ - Free form field for more specific sample disease information. This
 __BIOMATERIAL_PROVIDER__ - The name of the company, laboratory or person that provided the biological material.
 
 __BIOMATERIAL_TYPE__ - Primary Cell Culture
+
+__ORIGIN_SAMPLE__ - Description of the origin tissue from which sample was extracted.
+
+__ORIGIN_SAMPLE_ONTOLOGY_URI__ - (Ontology: UBERON) links to the tissue from which sample was extracted.
 
 __CELL_TYPE__ - The type of cell.
 
