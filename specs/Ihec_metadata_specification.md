@@ -42,9 +42,9 @@ Field __EXPERIMENT_ONTOLOGY_URI__:
 Field __MOLECULE_ONTOLOGY_URI__:
 * Sequence Ontology (__SO__ - [http://www.sequenceontology.org/](http://www.sequenceontology.org/)) 
 
-Tags with controlled vocabularies are labelled as “Controlled Vocabulary”.
+Tags with controlled vocabularies are labelled as "Controlled Vocabulary".
 
-Tags with ontologies are labelled as “Ontology”.
+Tags with ontologies are labelled as "Ontology".
 
 # SAMPLES
 
