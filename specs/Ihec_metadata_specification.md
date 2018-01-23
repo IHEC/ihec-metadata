@@ -193,7 +193,7 @@ __DONOR_ETHNICITY__ - The ethnicity of the donor that provided the primary tissu
 
 All experiments types include these fields:
 
-__EXPERIMENT_TYPE__ - The assay target (e.g. ‘DNA Methylation’, ‘mRNA-Seq’, ‘smRNA-Seq’, 'Histone H3K4me1').
+__EXPERIMENT_TYPE__ - (Controlled Vocabulary) The assay target (e.g. ‘DNA Methylation’, ‘mRNA-Seq’, ‘smRNA-Seq’, 'Histone H3K4me1').
 
 __EXPERIMENT_ONTOLOGY_URI__ - (Ontology: OBI) links to experiment ontology information.
 
@@ -206,11 +206,11 @@ __MOLECULE__ - (Controlled Vocabulary) The type of molecule that was extracted f
 
 ## Chromatin Accessibility
 
-__EXPERIMENT_TYPE:__ Enter 'Chromatin Accessibility'.
+__EXPERIMENT_TYPE__ - (Controlled Vocabulary) 'Chromatin Accessibility'
 
-__EXPERIMENT_ONTOLOGY_URI:__ Enter 'http://purl.obolibrary.org/obo/OBI_0001853'.
+__EXPERIMENT_ONTOLOGY_URI__ - (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0001853'
 
-__LIBRARY_STRATEGY:__ Enter 'DNase-Hypersensitivity'.
+__LIBRARY_STRATEGY__ - (Controlled Vocabulary) 'DNase-Hypersensitivity'
 
 __EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
 
@@ -218,11 +218,11 @@ __DNASE_PROTOCOL__ - The protocol used for DNAse treatment.
 
 ## WGBS (NOTE: this is a new name to be used instead of Bisulfite-Seq )
 
-__EXPERIMENT_TYPE:__ Enter 'DNA Methylation'.
+__EXPERIMENT_TYPE__ - (Controlled Vocabulary) 'DNA Methylation'
 
-__EXPERIMENT_ONTOLOGY_URI:__ Enter 'http://purl.obolibrary.org/obo/OBI_0001863'.
+__EXPERIMENT_ONTOLOGY_URI__ - (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0001863'
 
-__LIBRARY_STRATEGY:__ Enter 'Bisulfite-Seq'.
+__LIBRARY_STRATEGY__ - (Controlled Vocabulary) 'Bisulfite-Seq'
 
 __EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
 
@@ -262,11 +262,11 @@ __LIBRARY_GENERATION_PCR_PRODUCT_ISOLATION_PROTOCOL__ - The protocol for isolati
 
 ## MeDIP-Seq
 
-__EXPERIMENT_TYPE:__ Enter 'DNA Methylation'.
+__EXPERIMENT_TYPE__ - (Controlled Vocabulary) 'DNA Methylation'
 
-__EXPERIMENT_ONTOLOGY_URI:__ Enter 'http://purl.obolibrary.org/obo/OBI_0000693'.
+__EXPERIMENT_ONTOLOGY_URI__ - (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0000693'
 
-__LIBRARY_STRATEGY:__ Enter 'MeDIP-Seq'.
+__LIBRARY_STRATEGY__ - (Controlled Vocabulary) 'MeDIP-Seq'
 
 __EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
 
@@ -294,11 +294,11 @@ __MeDIP_ANTIBODY_LOT__ - The lot identifier of the antibody.
 
 ## MRE-Seq
 
-__EXPERIMENT_TYPE:__ Enter 'DNA Methylation'.
+__EXPERIMENT_TYPE__ - (Controlled Vocabulary) 'DNA Methylation'
 
-__EXPERIMENT_ONTOLOGY_URI:__ Enter 'http://purl.obolibrary.org/obo/OBI_0001861'.
+__EXPERIMENT_ONTOLOGY_URI__ - (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0001861'
 
-__LIBRARY_STRATEGY:__ - Enter 'MRE-Seq'.
+__LIBRARY_STRATEGY__ - (Controlled Vocabulary) 'MRE-Seq'.
 
 __MRE_PROTOCOL__ - The MRE protocol.
 
@@ -308,13 +308,13 @@ __MRE_PROTOCOL_RESTRICTION_ENZYME__ - The restriction enzyme(s) used in the MRE 
 
 __MRE_PROTOCOL_SIZE_FRACTION__ - The size of the fragments selected in the MRE protocol.
 
-## Chip-Seq Input
+## ChIP-Seq Input
 
-__EXPERIMENT_TYPE:__ Enter 'ChIP-Seq Input'.
+__EXPERIMENT_TYPE__ - (Controlled Vocabulary) 'ChIP-Seq Input'
 
-__EXPERIMENT_ONTOLOGY_URI:__ Enter 'http://purl.obolibrary.org/obo/OBI_0002017'.
+__EXPERIMENT_ONTOLOGY_URI__ - (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0002017'
 
-__LIBRARY_STRATEGY:__ Enter 'ChIP-Seq'.
+__LIBRARY_STRATEGY__ - (Controlled Vocabulary) 'ChIP-Seq'
 
 __EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
 
@@ -322,17 +322,17 @@ __EXTRACTION_PROTOCOL_TYPE_OF_SONICATOR__ - The type of sonicator used for extra
 
 __EXTRACTION_PROTOCOL_SONICATION_CYCLES__ - The number of sonication cycles used for extraction.
 
-__CHIP_PROTOCOL:__ Input
+__CHIP_PROTOCOL__ - (Controlled Vocabulary) Input
 
-__CHIP_PROTOCOL_CHROMATIN_AMOUNT-__ The amount of chromatin used in the ChIP protocol.
+__CHIP_PROTOCOL_CHROMATIN_AMOUNT__ - The amount of chromatin used in the ChIP protocol.
 
-## Chip-Seq
+## ChIP-Seq
 
-__EXPERIMENT_TYPE:__ Enter one of ('Histone H3K4me1','Histone H3K4me3','Histone H3K9me3','Histone H3K9ac','Histone H3K27me3', 'Histone H3K36me3', etc.).
+__EXPERIMENT_TYPE__ - (Controlled Vocabulary) One of 'Histone H3K4me1','Histone H3K4me3','Histone H3K9me3','Histone H3K9ac','Histone H3K27me3', 'Histone H3K36me3', etc.
 
-__EXPERIMENT_ONTOLOGY_URI:__ Enter 'http://purl.obolibrary.org/obo/OBI_0002017'.
+__EXPERIMENT_ONTOLOGY_URI__ - (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0002017'
 
-__LIBRARY_STRATEGY:__ Enter 'ChIP-Seq'.
+__LIBRARY_STRATEGY__ - (Controlled Vocabulary) 'ChIP-Seq'
 
 __EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
 
@@ -362,13 +362,13 @@ __CHIP_PROTOCOL_CROSSLINK_TIME__ - The timespan in which the chromatin is crossl
 
 __LIBRARY_GENERATION_FRAGMENT_SIZE_RANGE__ - The fragment size range of the preparation.
 
-## mRNA-seq
+## mRNA-Seq
 
-__EXPERIMENT_TYPE:__ Enter 'mRNA-Seq'.
+__EXPERIMENT_TYPE__ - (Controlled Vocabulary) 'mRNA-Seq'
 
-__EXPERIMENT_ONTOLOGY_URI:__ Enter 'http://purl.obolibrary.org/obo/OBI_0001271'.
+__EXPERIMENT_ONTOLOGY_URI__ - (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0001271'
 
-__LIBRARY_STRATEGY__ - Enter 'RNA-Seq'.
+__LIBRARY_STRATEGY__ - (Controlled Vocabulary) 'RNA-Seq'
 
 __EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
 
@@ -408,11 +408,11 @@ __LIBRARY_GENERATION_PCR_PRIMER_CONC__ - The concentration of the PCR primers us
 
 __LIBRARY_GENERATION_PCR_PRODUCT_ISOLATION_PROTOCOL__ - The protocol for isolating PCR products used for library generation.
 
-__TEMPLATE_TYPE__ - mRNA or cDNA - The type of template.
+__TEMPLATE_TYPE__ - (Controlled Vocabulary) mRNA or cDNA - The type of template.
 
-__AMPLIFIED__ - True or False - Is the sample amplified?
+__AMPLIFIED__ - (Controlled Vocabulary) True or False - Is the sample amplified?
 
-__PREPARATION_INITIAL_MRNA_QNTY__ -The initial mRNA quantity used in preparation.
+__PREPARATION_INITIAL_MRNA_QNTY__ - The initial mRNA quantity used in preparation.
 
 __PREPARATION_REVERSE_TRANSCRIPTION_PROTOCOL__ - The protocol for reverse transcription used in preparation.
 
@@ -428,13 +428,13 @@ __LIBRARY_GENERATION_FRAGMENT_SIZE_RANGE__ - The fragment size range of the prep
 
 <strong>LIBRARY_GENERATION_5'_ADAPTER_SEQUENCE</strong> - The sequence of the 5' adapter used for library generation.
 
-## total-RNA-seq
+## total-RNA-Seq
 
-__EXPERIMENT_TYPE:__ Enter 'total-RNA-Seq'.
+__EXPERIMENT_TYPE__ - (Controlled Vocabulary) 'total-RNA-Seq'
 
-__EXPERIMENT_ONTOLOGY_URI:__ Enter 'http://purl.obolibrary.org/obo/OBI_0001271'.
+__EXPERIMENT_ONTOLOGY_URI__ - (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0001271'
 
-__LIBRARY_STRATEGY__ - Enter 'RNA-Seq'.
+__LIBRARY_STRATEGY__ - (Controlled Vocabulary) 'RNA-Seq'
 
 __EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
 
@@ -474,11 +474,11 @@ __LIBRARY_GENERATION_PCR_PRIMER_CONC__ - The concentration of the PCR primers us
 
 __LIBRARY_GENERATION_PCR_PRODUCT_ISOLATION_PROTOCOL__ - The protocol for isolating PCR products used for library generation.
 
-__TEMPLATE_TYPE__ - mRNA or cDNA - The type of template.
+__TEMPLATE_TYPE__ - (Controlled Vocabulary) mRNA or cDNA - The type of template.
 
-__AMPLIFIED__ - True or False - Is the sample amplified?
+__AMPLIFIED__ - (Controlled Vocabulary) True or False - Is the sample amplified?
 
-__PREPARATION_INITIAL_MRNA_QNTY__ -The initial mRNA quantity used in preparation.
+__PREPARATION_INITIAL_MRNA_QNTY__ - The initial mRNA quantity used in preparation.
 
 __PREPARATION_REVERSE_TRANSCRIPTION_PROTOCOL__ - The protocol for reverse transcription used in preparation.
 
@@ -496,11 +496,11 @@ __LIBRARY_GENERATION_FRAGMENT_SIZE_RANGE__ - The fragment size range of the prep
 
 ## smRNA-Seq
 
-__EXPERIMENT_TYPE__ - Enter 'smRNA-Seq'.
+__EXPERIMENT_TYPE__ - (Controlled Vocabulary) 'smRNA-Seq'
 
-__EXPERIMENT_ONTOLOGY_URI:__ Enter 'http://purl.obolibrary.org/obo/OBI_0001271'.
+__EXPERIMENT_ONTOLOGY_URI__ - (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0001271'
 
-__LIBRARY_STRATEGY__ - Enter 'RNA-Seq'.
+__LIBRARY_STRATEGY__ - (Controlled Vocabulary) 'RNA-Seq'
 
 __EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
 
