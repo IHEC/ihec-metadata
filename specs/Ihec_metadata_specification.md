@@ -1,10 +1,17 @@
-# IHEC Metadata Specification (Version 1.1)
+# IHEC Metadata Specification (version 1.0)
 
-The IHEC metadata standards are extension of the standards used by the Roadmap Epigenomics Project. Please refer to Sections 1 and 2 of original specification (archived at https://github.com/IHEC/ihec-metadata/blob/master/specs/original_docs/IHEC-Metadata.pdf )  for the data and metadata model.
+## Introduction
+The IHEC metadata standards are extension of the standards used by the Roadmap Epigenomics Project. Please refer to Sections 1 and 2 of original specification (archived at https://github.com/IHEC/ihec-metadata/blob/master/specs/original_docs/IHEC-Metadata.pdf) for the data and metadata model.
 
-This document describes metadata elements extending the __SRA XML Schema 1.2__. The core SRA XML elements are augmented by additional attributes defined for purposes of the NIH Roadmap Epigenomics as described in the official IHEC ecosystem repository. 
+This document describes metadata elements extending the __SRA XML Schema 1.2__. The core SRA XML elements are augmented by additional attributes defined for purposes of the NIH Roadmap Epigenomics as described in the official IHEC ecosystem repository.
 
-The same attribute may be used multiple times in a single XML record. This may be most useful for supplying URIs to multiple ontologies or for supplying multiple references to a single ontology such as in the case of DISEASE_ONTOLOGY_URI. For example, describing a brain primary tissue using ontology terms for ('Brodmann (1909) area 8', 'Brodmann (1909) area 9'):
+Documentation for the core SRA XML elements is here: [http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=doc](http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=doc)
+
+The SRA XML schemas are here: [http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=xml_schemas](http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=xml_schemas)
+
+## How to define multiple values per metadata tag
+
+The same attribute may be used multiple times in a single XML record. This may be most useful, for example, for supplying URIs to multiple ontologies or for supplying multiple references to a single ontology such as in the case of DISEASE_ONTOLOGY_URI. For example, describing a brain primary tissue using ontology terms for ('Brodmann (1909) area 8', 'Brodmann (1909) area 9') would be:
 
 ```
 <SAMPLE_ATTRIBUTE>
@@ -16,14 +23,6 @@ The same attribute may be used multiple times in a single XML record. This may b
     <VALUE>http://purl.obolibrary.org/obo/UBERON_0013540</VALUE>
 </SAMPLE_ATTRIBUTE>
 ```
-
-Documentation for the core SRA XML elements is here: [http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=doc](http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=doc)
-
-The SRA XML schemas are here: [http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=xml_schemas](http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=xml_schemas)
-
-Tags with controlled vocabularies are labelled as “Controlled Vocabulary”.
-
-Tags with ontolgies are labelled as “Ontology”.
 
 ## Ontologies
 
@@ -43,20 +42,23 @@ Field __EXPERIMENT_ONTOLOGY_URI__:
 Field __MOLECULE_ONTOLOGY_URI__:
 * Sequence Ontology (__SO__ - [http://www.sequenceontology.org/](http://www.sequenceontology.org/)) 
 
+Tags with controlled vocabularies are labelled as “Controlled Vocabulary”.
+
+Tags with ontologies are labelled as “Ontology”.
 
 # SAMPLES
 
 ## Cell Line
 
-__SAMPLE_ONTOLOGY_URI__ - (Ontology: EFO) links to sample ontology information.
+__SAMPLE_ONTOLOGY_URI__ - (Ontology: EFO) Links to sample ontology information.
 
-__DISEASE_ONTOLOGY_URI__ - (Ontology: NCIM) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute. For samples without any known disease, use the NCImetathesaurus C0549184 term "None".
+__DISEASE_ONTOLOGY_URI__ - (Ontology: NCIM) Links to sample disease ontology information. This attribute reflects the disease for this particular sample, not the donor health condition. The NCImetathesaurus term C0277545 "Disease type AND/OR category unknown" should be used for unknown diseases. For samples without any known disease, use the NCImetathesaurus term C0549184 "None". Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) and/or in the free form DISEASE attribute.
 
-__DISEASE:__ Free form field for more specific sample disease information. This property reflects the disease for this particular sample, not for the donor health condition.  
+__DISEASE:__ - Free form field for more specific sample disease information. This property reflects the disease for this particular sample, not the donor health condition.
 
 __BIOMATERIAL_PROVIDER__ - The name of the company, laboratory or person that provided the biological material.
 
-__BIOMATERIAL_TYPE:__ Cell Line
+__BIOMATERIAL_TYPE:__ - (Controlled Vocabulary) Cell Line
 
 __LINE__ - The name of the cell line.
 
@@ -66,11 +68,11 @@ __DIFFERENTIATION_STAGE__ - The stage in cell differentiation to which the cell 
 
 __DIFFERENTIATION_METHOD__ - The protocol used to differentiation the cell line.
 
-__PASSAGE__ - The number of times the cell line has been re-plated and allowed to grow back to confluency or to some maximum density if using suspension cultures.
+__PASSAGE__ - The number of times the cell line has been re-plated and allowed to grow back to confluency or to some maximum density, if using suspension cultures.
 
 __MEDIUM__ - The medium in which the cell line has been grown.
 
-__SEX:__ "Male", "Female", "Unknown", or “Mixed” for pooled samples.
+__SEX:__ - (Controlled Vocabulary) "Male", "Female", "Unknown", or "Mixed" for pooled samples.
 
 __BATCH__ - The batch from which the cell line is derived. Primarily applicable to initial H1 cell line batches. NA if not applicable.
 
@@ -78,17 +80,17 @@ __BATCH__ - The batch from which the cell line is derived. Primarily applicable 
 
 __SAMPLE_ONTOLOGY_URI__ - (Ontology: CL) links to sample ontology information.
 
-__DISEASE_ONTOLOGY_URI__ - (Ontology: NCIM) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute. For samples without any known disease, use the NCImetathesaurus C0549184 term "None". If dealing with a rare disease consider identifiability issues.
+__DISEASE_ONTOLOGY_URI__ - (Ontology: NCIM) Links to sample disease ontology information. This attribute reflects the disease for this particular sample, not the donor health condition. The NCImetathesaurus term C0277545 "Disease type AND/OR category unknown" should be used for unknown diseases. For samples without any known disease, use the NCImetathesaurus term C0549184 "None". Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) and/or in the free form DISEASE attribute. If dealing with a rare disease, please consider identifiability issues.
 
-__DISEASE:__ Free form field for more specific sample disease information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues.
+__DISEASE:__ - Free form field for more specific sample disease information. This property reflects the disease for this particular sample, not the donor health condition. If dealing with a rare disease, please consider identifiability issues.
 
 __BIOMATERIAL_PROVIDER__ - The name of the company, laboratory or person that provided the biological material.
 
-__BIOMATERIAL_TYPE:__ Primary Cell
+__BIOMATERIAL_TYPE:__ - (Controlled Vocabulary) Primary Cell
 
-__ORIGIN_SAMPLE_ONTOLOGY_URI__ - (Ontology: UBERON) links to the tissue from which sample was extracted.
+__ORIGIN_SAMPLE_ONTOLOGY_URI__ - (Ontology: UBERON) Links to the origin tissue from which the sample was extracted.
 
-__ORIGIN_SAMPLE__ - Description of the origin tissue from which sample was extracted.
+__ORIGIN_SAMPLE__ - Description of the origin tissue from which the sample was extracted.
 
 __CELL_TYPE__ - The type of cell.
 
@@ -96,17 +98,17 @@ __MARKERS__ - Markers used to isolate and identify the cell type.
 
 __DONOR_ID__ - An identifying designation for the donor that provided the primary cell.
 
-__DONOR_AGE__ - The age of the donor that provided the primary cell. NA if not available. If over 90 years enter as 90+. If entering a range of ages use the format “{age}-{age}”.
+__DONOR_AGE__ - The age of the donor that provided the primary cell. NA if not available. If over 90 years enter as "90+". If entering a range of ages use the format "{age}-{age}".
 
-__DONOR_AGE_UNIT__ - (Controlled Vocabulary) “year”, “month”, “week”, or “day”.
+__DONOR_AGE_UNIT__ - (Controlled Vocabulary) "year", "month", "week", or "day".
 
-__DONOR_LIFE_STAGE__ - (Controlled Vocabulary, Optional) "fetal", "newborn", "child", "adult", "unknown", "embryonic", "postnatal".
+__DONOR_LIFE_STAGE__ - (Controlled Vocabulary) "fetal", "newborn", "child", "adult", "unknown", "embryonic", "postnatal".
 
-__DONOR_HEALTH_STATUS_ONTOLOGY_URI__ - (Ontology: NCIM) links to the health status of the donor that provided the primary cell. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute. For samples without any known disease, use the NCImetathesaurus C0549184 term "None". If dealing with a rare disease consider identifiability issues.
+__DONOR_HEALTH_STATUS_ONTOLOGY_URI__ - (Ontology: NCIM) Links to the health status of the donor that provided the primary cell. The NCImetathesaurus term C0277545 "Disease type AND/OR category unknown" should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute. For samples without any known disease, use the NCImetathesaurus term C0549184 "None". If dealing with a rare disease, please consider identifiability issues.
 
 __DONOR_HEALTH_STATUS__ - The health status of the donor that provided the primary cell. NA if not available.
 
-__DONOR_SEX__ - (Controlled Vocabulary) "Male", "Female", "Unknown", or “Mixed” for pooled samples.
+__DONOR_SEX__ - (Controlled Vocabulary) "Male", "Female", "Unknown", or "Mixed" for pooled samples.
 
 __DONOR_ETHNICITY__ - The ethnicity of the donor that provided the primary cell. NA if not available. If dealing with small/vulnerable populations consider identifiability issues.
 
@@ -114,19 +116,19 @@ __PASSAGE_IF_EXPANDED__ - If the primary cell has been expanded, the number of t
 
 ## Primary Cell Culture
 
-__SAMPLE_ONTOLOGY_URI__ - (Ontology: CL) links to sample ontology information.
+__SAMPLE_ONTOLOGY_URI__ - (Ontology: CL) Links to sample ontology information.
 
-__DISEASE_ONTOLOGY_URI__ - (Ontology: NCIM) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute. For samples without any known disease, use the NCImetathesaurus C0549184 term "None". If dealing with a rare disease consider identifiability issues.
+__DISEASE_ONTOLOGY_URI__ - (Ontology: NCIM) Links to sample disease ontology information. This attribute reflects the disease for this particular sample, not the donor health condition. The NCImetathesaurus term C0277545 "Disease type AND/OR category unknown" should be used for unknown diseases. For samples without any known disease, use the NCImetathesaurus term C0549184 "None". Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) and/or in the free form DISEASE attribute. If dealing with a rare disease, please consider identifiability issues.
 
-__DISEASE__ - Free form field for more specific sample disease information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues.
+__DISEASE__ - Free form field for more specific sample disease information. This property reflects the disease for this particular sample, not the donor health condition. If dealing with a rare disease, please consider identifiability issues.
 
 __BIOMATERIAL_PROVIDER__ - The name of the company, laboratory or person that provided the biological material.
 
-__BIOMATERIAL_TYPE__ - Primary Cell Culture
+__BIOMATERIAL_TYPE__ - (Controlled Vocabulary) Primary Cell Culture
 
-__ORIGIN_SAMPLE_ONTOLOGY_URI__ - (Ontology: UBERON) links to the tissue from which sample was extracted.
+__ORIGIN_SAMPLE_ONTOLOGY_URI__ - (Ontology: UBERON) links to the origin tissue from which the sample was extracted.
 
-__ORIGIN_SAMPLE__ - Description of the origin tissue from which sample was extracted.
+__ORIGIN_SAMPLE__ - Description of the origin tissue from which the sample was extracted.
 
 __CELL_TYPE__ - The type of cell.
 
@@ -136,17 +138,17 @@ __CULTURE_CONDITIONS__ - The conditions under which the primary cell was culture
 
 __DONOR_ID__ - An identifying designation for the donor that provided the primary cell.
 
-__DONOR_AGE__ - The age of the donor that provided the primary cell. NA if not available. If over 90 years enter as 90+. If entering a range of ages use the format “{age}-{age}”.
+__DONOR_AGE__ - The age of the donor that provided the primary cell. NA if not available. If over 90 years enter as "90+". If entering a range of ages use the format "{age}-{age}".
 
-__DONOR_AGE_UNIT__ - (Controlled Vocabulary) “year”, “month”, “week”, or “day”.
+__DONOR_AGE_UNIT__ - (Controlled Vocabulary) "year", "month", "week", or "day".
 
-__DONOR_LIFE_STAGE__ - (Controlled Vocabulary, Optional) "fetal", "newborn", "child", "adult", "unknown", "embryonic", "postnatal"
+__DONOR_LIFE_STAGE__ - (Controlled Vocabulary) "fetal", "newborn", "child", "adult", "unknown", "embryonic", "postnatal"
 
-__DONOR_HEALTH_STATUS_ONTOLOGY_URI__ - (Ontology: NCIM) links to the health status of the donor that provided the primary cell. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute. For samples without any known disease, use the NCImetathesaurus C0549184 term "None". If dealing with a rare disease consider identifiability issues.
+__DONOR_HEALTH_STATUS_ONTOLOGY_URI__ - (Ontology: NCIM) Links to the health status of the donor that provided the primary cell. The NCImetathesaurus term C0277545 "Disease type AND/OR category unknown" should be used for unknown diseases. For samples without any known disease, use the NCImetathesaurus term C0549184 "None". Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute. If dealing with a rare disease, please consider identifiability issues.
 
 __DONOR_HEALTH_STATUS__ - The health status of the donor that provided the primary cell. NA if not available.
 
-__DONOR_SEX__ - (Controlled Vocabulary) "Male", "Female", "Unknown", or “Mixed” for pooled samples.
+__DONOR_SEX__ - (Controlled Vocabulary) "Male", "Female", "Unknown", or "Mixed" for pooled samples.
 
 __DONOR_ETHNICITY__ - The ethnicity of the donor that provided the primary cell. NA if not available. If dealing with small/vulnerable populations consider identifiability issues.
 
@@ -154,15 +156,15 @@ __PASSAGE_IF_EXPANDED__ - If the primary cell culture has been expanded, the num
 
 ## Primary Tissue
 
-__SAMPLE_ONTOLOGY_URI__ - (Ontology: UBERON) links to sample ontology information.
+__SAMPLE_ONTOLOGY_URI__ - (Ontology: UBERON) Links to sample ontology information.
 
-__DISEASE_ONTOLOGY_URI__ - (Ontology: NCIM) links to sample disease ontology information. This property reflects the disease for this particular sample, not for the donor health condition. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute. For samples without any known disease, use the NCImetathesaurus C0549184 term "None". If dealing with a rare disease consider identifiability issues.
+__DISEASE_ONTOLOGY_URI__ - (Ontology: NCIM) Links to sample disease ontology information. This attribute reflects the disease for this particular sample, not the donor health condition. The NCImetathesaurus term C0277545 "Disease type AND/OR category unknown" should be used for unknown diseases. For samples without any known disease, use the NCImetathesaurus term C0549184 "None". Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) and/or in the free form DISEASE attribute. If dealing with a rare disease, please consider identifiability issues.
 
-__DISEASE:__ Free form field for more specific sample disease information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease consider identifiability issues.
+__DISEASE:__ - Free form field for more specific sample disease information. This property reflects the disease for this particular sample, not for the donor health condition. If dealing with a rare disease, please consider identifiability issues.
 
 __BIOMATERIAL_PROVIDER__ - The name of the company, laboratory or person that provided the biological material.
 
-__BIOMATERIAL_TYPE:__ Primary Tissue
+__BIOMATERIAL_TYPE:__ - (Controlled Vocabulary) Primary Tissue
 
 __TISSUE_TYPE__ - The type of tissue.
 
@@ -172,20 +174,19 @@ __COLLECTION_METHOD__ - The protocol for collecting the primary tissue.
 
 __DONOR_ID__ - An identifying designation for the donor that provided the primary tissue.
 
-__DONOR_AGE__ - The age of the donor that provided the primary tissue. NA if not available. If over 90 years enter as 90+. If entering a range of ages use the format “{age}-{age}”.
+__DONOR_AGE__ - The age of the donor that provided the primary tissue. NA if not available. If over 90 years enter as "90+". If entering a range of ages use the format "{age}-{age}".
 
-__DONOR_AGE_UNIT__ - (Controlled Vocabulary) “year”, “month”, “week”, or “day”.
+__DONOR_AGE_UNIT__ - (Controlled Vocabulary) "year", "month", "week", or "day".
 
-__DONOR_LIFE_STAGE__ - (Controlled Vocabulary, Optional) "fetal", "newborn", "child", "adult", "unknown", "embryonic", "postnatal"
+__DONOR_LIFE_STAGE__ - (Controlled Vocabulary) "fetal", "newborn", "child", "adult", "unknown", "embryonic", "postnatal"
 
-__DONOR_HEALTH_STATUS_ONTOLOGY_URI__ - (Ontology: NCIM) links to the health status of the donor that provided the primary tissue. The NCImetathesaurus term C0277545 “Disease type AND/OR category unknown” should be used for unknown diseases. Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute. For samples without any known disease, use the NCImetathesaurus C0549184 term "None". If dealing with a rare disease consider identifiability issues.
+__DONOR_HEALTH_STATUS_ONTOLOGY_URI__ - (Ontology: NCIM) Links to the health status of the donor that provided the primary cell. The NCImetathesaurus term C0277545 "Disease type AND/OR category unknown" should be used for unknown diseases. For samples without any known disease, use the NCImetathesaurus term C0549184 "None". Phenotypes associated with the disease should be submitted as DISEASE_ONTOLOGY_URIs (if available) or in the free form DISEASE attribute. If dealing with a rare disease, please consider identifiability issues.
 
 __DONOR_HEALTH_STATUS__ - The health status of the donor that provided the primary tissue. NA if not available.
 
-__DONOR_SEX__ - (Controlled Vocabulary) "Male", "Female", "Unknown", or “Mixed” for pooled samples.
+__DONOR_SEX__ - (Controlled Vocabulary) "Male", "Female", "Unknown", or "Mixed" for pooled samples.
 
 __DONOR_ETHNICITY__ - The ethnicity of the donor that provided the primary tissue. NA if not available. If dealing with small/vulnerable populations consider identifiability issues.
-
 
 
 # EXPERIMENTS 
