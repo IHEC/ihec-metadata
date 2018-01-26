@@ -58,7 +58,7 @@ __DISEASE:__ - Free form field for more specific sample disease information. Thi
 
 __BIOMATERIAL_PROVIDER__ - The name of the company, laboratory or person that provided the biological material.
 
-__BIOMATERIAL_TYPE:__ - (Controlled Vocabulary) Cell Line
+__BIOMATERIAL_TYPE:__ - (Controlled Vocabulary) "Cell Line".
 
 __LINE__ - The name of the cell line.
 
@@ -86,7 +86,7 @@ __DISEASE:__ - Free form field for more specific sample disease information. Thi
 
 __BIOMATERIAL_PROVIDER__ - The name of the company, laboratory or person that provided the biological material.
 
-__BIOMATERIAL_TYPE:__ - (Controlled Vocabulary) Primary Cell
+__BIOMATERIAL_TYPE:__ - (Controlled Vocabulary) "Primary Cell".
 
 __ORIGIN_SAMPLE_ONTOLOGY_URI__ - (Ontology: UBERON) Links to the origin tissue from which the sample was extracted.
 
@@ -124,7 +124,7 @@ __DISEASE__ - Free form field for more specific sample disease information. This
 
 __BIOMATERIAL_PROVIDER__ - The name of the company, laboratory or person that provided the biological material.
 
-__BIOMATERIAL_TYPE__ - (Controlled Vocabulary) Primary Cell Culture
+__BIOMATERIAL_TYPE__ - (Controlled Vocabulary) "Primary Cell Culture".
 
 __ORIGIN_SAMPLE_ONTOLOGY_URI__ - (Ontology: UBERON) links to the origin tissue from which the sample was extracted.
 
@@ -164,7 +164,7 @@ __DISEASE:__ - Free form field for more specific sample disease information. Thi
 
 __BIOMATERIAL_PROVIDER__ - The name of the company, laboratory or person that provided the biological material.
 
-__BIOMATERIAL_TYPE:__ - (Controlled Vocabulary) Primary Tissue
+__BIOMATERIAL_TYPE:__ - (Controlled Vocabulary) "Primary Tissue".
 
 __TISSUE_TYPE__ - The type of tissue.
 
