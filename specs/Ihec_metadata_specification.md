@@ -440,7 +440,7 @@ __TEMPLATE_TYPE__ - (Controlled Vocabulary) mRNA or cDNA - The type of template,
 
 __AMPLIFIED__ - (Controlled Vocabulary) True or False - Is the sample amplified?
 
-__PREPARATION_INITIAL_RNA_QNTY__ -The initial RNA quantity used in preparation.
+__PREPARATION_INITIAL_RNA_QNTY__ - The initial RNA quantity used in preparation.
 
 __PREPARATION_REVERSE_TRANSCRIPTION_PROTOCOL__ - The protocol for reverse transcription used in preparation.
 
