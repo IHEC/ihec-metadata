@@ -208,7 +208,7 @@ __MOLECULE__ - (Controlled Vocabulary) The type of molecule that was extracted f
 
 __EXPERIMENT_TYPE:__ (Controlled Vocabulary) 'Chromatin Accessibility'.
 
-__EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0001853'.
+__EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0001853' or any of its subclasses.
 
 __LIBRARY_STRATEGY:__ (Controlled Vocabulary) 'DNase-Hypersensitivity'.
 
@@ -224,7 +224,7 @@ __DNASE_PROTOCOL__ - The protocol used for DNAse treatment.
 
 __EXPERIMENT_TYPE:__ (Controlled Vocabulary) 'DNA Methylation'.
 
-__EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0001863'.
+__EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0001863' or any of its subclasses.
 
 __LIBRARY_STRATEGY:__ (Controlled Vocabulary) 'Bisulfite-Seq'.
 
@@ -272,7 +272,7 @@ __LIBRARY_GENERATION_PCR_PRODUCT_ISOLATION_PROTOCOL__ - The protocol for isolati
 
 __EXPERIMENT_TYPE:__ (Controlled Vocabulary) 'DNA Methylation'.
 
-__EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0000693'.
+__EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0000693' or any of its subclasses.
 
 __LIBRARY_STRATEGY:__ (Controlled Vocabulary) 'MeDIP-Seq'.
 
@@ -308,7 +308,7 @@ __MeDIP_ANTIBODY_LOT__ - The lot identifier of the antibody.
 
 __EXPERIMENT_TYPE:__ (Controlled Vocabulary) 'DNA Methylation'.
 
-__EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0001861'.
+__EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0001861' or any of its subclasses.
 
 __LIBRARY_STRATEGY:__ - (Controlled Vocabulary) 'MRE-Seq'.
 
@@ -328,7 +328,7 @@ __MRE_PROTOCOL_SIZE_FRACTION__ - The size of the fragments selected in the MRE p
 
 __EXPERIMENT_TYPE:__ (Controlled Vocabulary) 'ChIP-Seq Input'.
 
-__EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0002017'.
+__EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0002017' or any of its subclasses.
 
 __LIBRARY_STRATEGY:__ (Controlled Vocabulary) 'ChIP-Seq'.
 
@@ -350,7 +350,7 @@ __CHIP_PROTOCOL_CHROMATIN_AMOUNT-__ The amount of chromatin used in the ChIP pro
 
 __EXPERIMENT_TYPE:__ (Controlled Vocabulary) one of ('Histone H3K4me1','Histone H3K4me3','Histone H3K9me3','Histone H3K9ac','Histone H3K27me3', 'Histone H3K36me3', etc.).
 
-__EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0002017'.
+__EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0002017' or any of its subclasses.
 
 __LIBRARY_STRATEGY:__ (Controlled Vocabulary) 'ChIP-Seq'.
 
@@ -390,7 +390,7 @@ __LIBRARY_GENERATION_FRAGMENT_SIZE_RANGE__ - The fragment size range of the prep
 
 __EXPERIMENT_TYPE:__ (Controlled Vocabulary) 'RNA-Seq'.
 
-__EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0001271'.
+__EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0001271' or any of its subclasses.
 
 __LIBRARY_STRATEGY__ - (Controlled Vocabulary) 'RNA-Seq'.
 
