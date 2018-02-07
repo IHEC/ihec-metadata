@@ -324,31 +324,9 @@ __MRE_PROTOCOL_RESTRICTION_ENZYME__ - The restriction enzyme(s) used in the MRE 
 
 __MRE_PROTOCOL_SIZE_FRACTION__ - The size of the fragments selected in the MRE protocol.
 
-## Chip-Seq Input
-
-__EXPERIMENT_TYPE:__ (Controlled Vocabulary) 'ChIP-Seq Input'.
-
-__EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0000716' or any of its subclasses.
-
-__LIBRARY_STRATEGY:__ (Controlled Vocabulary) 'ChIP-Seq'.
-
-__MOLECULE_ONTOLOGY_URI:__ (Ontology: SO) 'http://purl.obolibrary.org/obo/SO_0000991'.
-
-__MOLECULE:__ (Controlled Vocabulary) 'genomic DNA'.
-
-__EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
-
-__EXTRACTION_PROTOCOL_TYPE_OF_SONICATOR__ - The type of sonicator used for extraction.
-
-__EXTRACTION_PROTOCOL_SONICATION_CYCLES__ - The number of sonication cycles used for extraction.
-
-__CHIP_PROTOCOL:__ (Controlled Vocabulary) Input
-
-__CHIP_PROTOCOL_CHROMATIN_AMOUNT-__ The amount of chromatin used in the ChIP protocol.
-
 ## Chip-Seq
 
-__EXPERIMENT_TYPE:__ (Controlled Vocabulary) one of ('Histone H3K4me1','Histone H3K4me3','Histone H3K9me3','Histone H3K9ac','Histone H3K27me3', 'Histone H3K36me3', etc.).
+__EXPERIMENT_TYPE:__ (Controlled Vocabulary) one of ('ChIP-Seq Input','Histone H3K4me1','Histone H3K4me3','Histone H3K9me3','Histone H3K9ac','Histone H3K27me3','Histone H3K36me3', etc.).
 
 __EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0000716' or any of its subclasses.
 
@@ -364,27 +342,27 @@ __EXTRACTION_PROTOCOL_TYPE_OF_SONICATOR__ - The type of sonicator used for extra
 
 __EXTRACTION_PROTOCOL_SONICATION_CYCLES__ - The number of sonication cycles used for extraction.
 
-__CHIP_PROTOCOL__ - The ChIP protocol used.
+__CHIP_PROTOCOL__ - The ChIP protocol used, or 'Input'.
 
 __CHIP_PROTOCOL_CHROMATIN_AMOUNT__ - The amount of chromatin used in the ChIP protocol.
 
-__CHIP_PROTOCOL_BEAD_TYPE__ - The type of bead used in the ChIP protocol.
+__CHIP_PROTOCOL_BEAD_TYPE__ - The type of bead used in the ChIP protocol. Leave empty for 'ChIP-Seq Input'.
 
-__CHIP_PROTOCOL_BEAD_AMOUNT__ - The amount of beads used in the ChIP protocol.
+__CHIP_PROTOCOL_BEAD_AMOUNT__ - The amount of beads used in the ChIP protocol. Leave empty for 'ChIP-Seq Input'.
 
-__CHIP_PROTOCOL_ANTIBODY_AMOUNT__ - The amount of antibody used in the ChIP protocol.
+__CHIP_PROTOCOL_ANTIBODY_AMOUNT__ - The amount of antibody used in the ChIP protocol. Leave empty for 'ChIP-Seq Input'.
 
-__CHIP_ANTIBODY__ - The specific antibody used in the ChIP protocol.
+__CHIP_ANTIBODY__ - The specific antibody used in the ChIP protocol. Leave empty for 'ChIP-Seq Input'.
 
-__CHIP_ANTIBODY_PROVIDER__ - The name of the company, laboratory or person that provided the antibody.
+__CHIP_ANTIBODY_PROVIDER__ - The name of the company, laboratory or person that provided the antibody. Leave empty for 'ChIP-Seq Input'.
 
-__CHIP_ANTIBODY_CATALOG__ - The catalog from which the antibody was purchased.
+__CHIP_ANTIBODY_CATALOG__ - The catalog from which the antibody was purchased. Leave empty for 'ChIP-Seq Input'.
 
-__CHIP_ANTIBODY_LOT__ - The lot identifier of the antibody.
+__CHIP_ANTIBODY_LOT__ - The lot identifier of the antibody. Leave empty for 'ChIP-Seq Input'.
 
-__CHIP_PROTOCOL_CROSSLINK_TIME__ - The timespan in which the chromatin is crosslinked
+__CHIP_PROTOCOL_CROSSLINK_TIME__ - The timespan in which the chromatin is crosslinked. Leave empty for 'ChIP-Seq Input'.
 
-__LIBRARY_GENERATION_FRAGMENT_SIZE_RANGE__ - The fragment size range of the preparation.
+__LIBRARY_GENERATION_FRAGMENT_SIZE_RANGE__ - The fragment size range of the preparation. Leave empty for 'ChIP-Seq Input'.
 
 ## RNA-seq
 
