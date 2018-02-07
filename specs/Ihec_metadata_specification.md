@@ -328,7 +328,7 @@ __MRE_PROTOCOL_SIZE_FRACTION__ - The size of the fragments selected in the MRE p
 
 __EXPERIMENT_TYPE:__ (Controlled Vocabulary) 'ChIP-Seq Input'.
 
-__EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0002017' or any of its subclasses.
+__EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0000716' or any of its subclasses.
 
 __LIBRARY_STRATEGY:__ (Controlled Vocabulary) 'ChIP-Seq'.
 
@@ -350,7 +350,7 @@ __CHIP_PROTOCOL_CHROMATIN_AMOUNT-__ The amount of chromatin used in the ChIP pro
 
 __EXPERIMENT_TYPE:__ (Controlled Vocabulary) one of ('Histone H3K4me1','Histone H3K4me3','Histone H3K9me3','Histone H3K9ac','Histone H3K27me3', 'Histone H3K36me3', etc.).
 
-__EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0002017' or any of its subclasses.
+__EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0000716' or any of its subclasses.
 
 __LIBRARY_STRATEGY:__ (Controlled Vocabulary) 'ChIP-Seq'.
 
