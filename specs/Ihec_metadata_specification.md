@@ -212,7 +212,7 @@ __EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI
 
 __LIBRARY_STRATEGY:__ (Controlled Vocabulary) 'DNase-Hypersensitivity'.
 
-__MOLECULE_ONTOLOGY_URI:__ (Ontology: SO) 'http://purl.obolibrary.org/obo/SO_0000991'.
+__MOLECULE_ONTOLOGY_URI:__ (Ontology: SO) 'http://purl.obolibrary.org/obo/SO_0000991' or any of its subclasses.
 
 __MOLECULE:__ (Controlled Vocabulary) 'genomic DNA'.
 
@@ -228,7 +228,7 @@ __EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI
 
 __LIBRARY_STRATEGY:__ (Controlled Vocabulary) 'Bisulfite-Seq'.
 
-__MOLECULE_ONTOLOGY_URI:__ (Ontology: SO) 'http://purl.obolibrary.org/obo/SO_0000991'.
+__MOLECULE_ONTOLOGY_URI:__ (Ontology: SO) 'http://purl.obolibrary.org/obo/SO_0000991' or any of its subclasses.
 
 __MOLECULE:__ (Controlled Vocabulary) 'genomic DNA'.
 
@@ -276,7 +276,7 @@ __EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI
 
 __LIBRARY_STRATEGY:__ (Controlled Vocabulary) 'MeDIP-Seq'.
 
-__MOLECULE_ONTOLOGY_URI:__ (Ontology: SO) 'http://purl.obolibrary.org/obo/SO_0000991'.
+__MOLECULE_ONTOLOGY_URI:__ (Ontology: SO) 'http://purl.obolibrary.org/obo/SO_0000991' or any of its subclasses.
 
 __MOLECULE:__ (Controlled Vocabulary) 'genomic DNA'.
 
@@ -312,7 +312,7 @@ __EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI
 
 __LIBRARY_STRATEGY:__ - (Controlled Vocabulary) 'MRE-Seq'.
 
-__MOLECULE_ONTOLOGY_URI:__ (Ontology: SO) 'http://purl.obolibrary.org/obo/SO_0000991'.
+__MOLECULE_ONTOLOGY_URI:__ (Ontology: SO) 'http://purl.obolibrary.org/obo/SO_0000991' or any of its subclasses.
 
 __MOLECULE:__ (Controlled Vocabulary) 'genomic DNA'.
 
@@ -332,7 +332,7 @@ __EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI
 
 __LIBRARY_STRATEGY:__ (Controlled Vocabulary) 'ChIP-Seq'.
 
-__MOLECULE_ONTOLOGY_URI:__ (Ontology: SO) 'http://purl.obolibrary.org/obo/SO_0000991'.
+__MOLECULE_ONTOLOGY_URI:__ (Ontology: SO) 'http://purl.obolibrary.org/obo/SO_0000991' or any of its subclasses.
 
 __MOLECULE:__ (Controlled Vocabulary) 'genomic DNA'.
 
@@ -372,7 +372,7 @@ __EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI
 
 __LIBRARY_STRATEGY__ - (Controlled Vocabulary) 'RNA-Seq'.
 
-__MOLECULE_ONTOLOGY_URI:__ (Ontology: SO) 'http://purl.obolibrary.org/obo/SO_0000871', 'http://purl.obolibrary.org/obo/SO_0000234', 'http://purl.obolibrary.org/obo/SO_0000274' or 'http://purl.obolibrary.org/obo/SO_0000013'.
+__MOLECULE_ONTOLOGY_URI:__ (Ontology: SO) 'http://purl.obolibrary.org/obo/SO_0000234' or any of its subclasses.
 
 __MOLECULE:__ (Controlled Vocabulary) 'polyA RNA', 'total RNA', 'nuclear RNA' or 'cytoplasmic RNA'.
 
