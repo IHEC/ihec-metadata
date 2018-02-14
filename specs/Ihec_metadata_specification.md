@@ -191,6 +191,15 @@ __DONOR_ETHNICITY__ - The ethnicity of the donor that provided the primary tissu
 
 # EXPERIMENTS
 
+###### Note for metadata resubmission
+In order to pass IHEC metadata validation, all datasets submitted prior to 2018 __must__ include the following properties:
+
+* LIBRARY_STRATEGY
+* EXPERIMENT_TYPE or EXPERIMENT_ONTOLOGY_URI
+* MOLECULE or MOLECULE_ONTOLOGY_URI, either defined in the experiment or sample object.
+
+###### Common fields
+
 All experiments types include these fields:
 
 __EXPERIMENT_TYPE__ - (Controlled Vocabulary) The assay target (e.g. ‘DNA Methylation’, ‘mRNA-Seq’, ‘smRNA-Seq’, 'Histone H3K4me1').
