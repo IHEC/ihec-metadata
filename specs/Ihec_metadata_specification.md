@@ -48,6 +48,10 @@ Tags with ontologies are labelled as "Ontology".
 
 # SAMPLES
 
+###### Note for metadata resubmission
+
+In order to pass IHEC metadata validation, all datasets submitted prior to 2018 must include all sample properties defined within each specific BIOMATERIAL_TYPE below.
+
 ## Cell Line
 
 __SAMPLE_ONTOLOGY_URI__ - (Ontology: EFO) Links to sample ontology information.
@@ -210,7 +214,7 @@ __LIBRARY_STRATEGY__ - (Controlled Vocabulary) The assay used. These are defined
 
 __MOLECULE_ONTOLOGY_URI__ - (Ontology: SO) links to molecule ontology information.
 
-__MOLECULE__ - (Controlled Vocabulary) The type of molecule that was extracted from the biological material. Include one of the following: total RNA, polyA RNA, cytoplasmic RNA, nuclear RNA, genomic DNA, protein, or other.
+__MOLECULE__ - (Controlled Vocabulary) The type of molecule that was extracted from the biological material. Include one of the following: total RNA, polyA RNA, cytoplasmic RNA, nuclear RNA, small RNA, genomic DNA, protein, or other.
 
 
 ## Chromatin Accessibility
@@ -333,7 +337,7 @@ __MRE_PROTOCOL_RESTRICTION_ENZYME__ - The restriction enzyme(s) used in the MRE 
 
 __MRE_PROTOCOL_SIZE_FRACTION__ - The size of the fragments selected in the MRE protocol.
 
-## Chip-Seq
+## ChIP-Seq
 
 __EXPERIMENT_TYPE:__ (Controlled Vocabulary) one of ('ChIP-Seq Input','Histone H3K4me1','Histone H3K4me3','Histone H3K9me3','Histone H3K9ac','Histone H3K27me3','Histone H3K36me3', etc.).
 
@@ -373,7 +377,7 @@ __CHIP_PROTOCOL_CROSSLINK_TIME__ - The timespan in which the chromatin is crossl
 
 __LIBRARY_GENERATION_FRAGMENT_SIZE_RANGE__ - The fragment size range of the preparation. Leave empty for 'ChIP-Seq Input'.
 
-## RNA-seq
+## RNA-Seq
 
 __EXPERIMENT_TYPE:__ (Controlled Vocabulary) 'RNA-Seq'.
 
@@ -383,15 +387,15 @@ __LIBRARY_STRATEGY__ - (Controlled Vocabulary) 'RNA-Seq'.
 
 __MOLECULE_ONTOLOGY_URI:__ (Ontology: SO) 'http://purl.obolibrary.org/obo/SO_0000234' or any of its subclasses.
 
-__MOLECULE:__ (Controlled Vocabulary) 'polyA RNA', 'total RNA', 'nuclear RNA' or 'cytoplasmic RNA'.
+__MOLECULE:__ (Controlled Vocabulary) 'polyA RNA', 'total RNA', 'nuclear RNA', 'cytoplasmic RNA' or 'small RNA'.
 
 __EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
 
-__EXTRACTION_PROTOCOL_RNA_ENRICHMENT__ - The mRNA enrichment method used in the extraction protocol.
+__EXTRACTION_PROTOCOL_RNA_ENRICHMENT__ - The RNA enrichment method used in the extraction protocol.
 
 __EXTRACTION_PROTOCOL_FRAGMENTATION__ - The fragmentation method used in the extraction protocol.
 
-__RNA_PREPARATION_FRAGMENT_SIZE_RANGE__ - The mRNA fragment size range of the preparation.
+__RNA_PREPARATION_FRAGMENT_SIZE_RANGE__ - The RNA fragment size range of the preparation, or 'NA' if not applicable.
 
 <strong>RNA_PREPARATION_5'_RNA_ADAPTER_SEQUENCE</strong> - The sequence of the 5’ RNA adapter used in preparation.
 
