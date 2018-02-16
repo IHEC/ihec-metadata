@@ -200,7 +200,7 @@ In order to pass IHEC metadata validation, all datasets submitted prior to 2018 
 
 * LIBRARY_STRATEGY
 * EXPERIMENT_TYPE or EXPERIMENT_ONTOLOGY_URI
-* MOLECULE or MOLECULE_ONTOLOGY_URI, either defined in the experiment or sample object.
+* MOLECULE or MOLECULE_ONTOLOGY_URI, either defined in the experiment or sample object. Because of the complexity to validate the presence of this field in either object, this requirement will be validated at the time of submission to EpiRR.
 
 ###### Common fields
 
