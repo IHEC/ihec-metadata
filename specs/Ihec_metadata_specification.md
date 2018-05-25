@@ -221,9 +221,9 @@ __MOLECULE__ - (Controlled Vocabulary) The type of molecule that was extracted f
 
 __EXPERIMENT_TYPE:__ (Controlled Vocabulary) 'Chromatin Accessibility'.
 
-__EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) 'http://purl.obolibrary.org/obo/OBI_0001853' or any of its subclasses.
+__EXPERIMENT_ONTOLOGY_URI:__ (Ontology: OBI) http://purl.obolibrary.org/obo/OBI_0002039, 'http://purl.obolibrary.org/obo/OBI_0001853' or any of its subclasses.
 
-__LIBRARY_STRATEGY:__ (Controlled Vocabulary) 'DNase-Hypersensitivity'.
+__LIBRARY_STRATEGY:__ (Controlled Vocabulary) 'ATAC-Seq', 'DNase-Hypersensitivity'.
 
 __MOLECULE_ONTOLOGY_URI:__ (Ontology: SO) 'http://purl.obolibrary.org/obo/SO_0000991' or any of its subclasses.
 
@@ -231,7 +231,7 @@ __MOLECULE:__ (Controlled Vocabulary) 'genomic DNA'.
 
 __EXTRACTION_PROTOCOL__ - The protocol used to isolate the extract material.
 
-__DNASE_PROTOCOL__ - The protocol used for DNAse treatment.
+__EXPERIMENT_PROTOCOL__ - The protocol used for library preparation (e.g. DNAse treatment, transposase treatment, etc.).
 
 ## WGBS (NOTE: this is a new name to be used instead of Bisulfite-Seq )
 
